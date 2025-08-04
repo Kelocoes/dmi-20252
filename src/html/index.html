@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+</style>
+<body>
+
+    <!-- Navegación con enlaces a diferentes secciones de la página -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Texto inicial de bienvenida -->
+    Hello, World!
+    <!-- Div con fondo azul claro y párrafos -->
+    <div style="background-color: lightblue;">
+        <p>Este es un documento HTML simple.</p>
+        <p>Siéntete libre de modificarlo según sea necesario.</p>
+    </div>
+
+    <!-- Diferentes niveles de encabezados -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <!-- Párrafo con texto en negrita y enfatizado -->
+    <p>Este es un párrafo con <strong>texto fuerte</strong> y <em>texto enfatizado</em>.</p>
+    <!-- Enlace a un sitio externo -->
+    <p>Aquí hay un enlace a <a href="https://www.example.com">Example</a>.</p>
+
+    <!-- Lista desordenada -->
+    <ul>
+        <li>Elemento de lista 1</li>
+        <li>Elemento de lista 2</li>
+        <li>Elemento de lista 3</li>
+    </ul>
+
+    <!-- Lista ordenada -->
+    <ol>
+        <li>Elemento ordenado 1</li>
+        <li>Elemento ordenado 2</li>
+        <li>Elemento ordenado 3</li>
+    </ol>
+
+    <!-- Sección de artículo -->
+    <article>
+        <h2>Título del artículo</h2>
+        <p>Esta es una sección de artículo.</p>
+    </article>
+
+    <!-- Bloque de código preformateado -->
+    <pre>
+        <code>
+            // Este es un bloque de código
+            function helloWorld() {
+                console.log("Hello, World!");
+            }
+        </code>
+    </pre>
+
+    <!-- Etiqueta de tiempo con una fecha específica -->
+    <time datetime="2025-08-04">4 de agosto de 2025</time>
+
+    <!-- Párrafo con una variable -->
+    <p>
+        El bucle no se detendrá hasta que <var>Faltan</var> sea igual a 0.
+    </p>
+
+    <!-- Texto con un span estilizado en rojo -->
+    <p>Este es un texto con un <span style="color: red;">span en rojo</span> para resaltar una parte específica.</p>
+
+    <!-- Imagen con un mapa de áreas clicables -->
+    <img src="/src/static/example-image.png" alt="Example Image" usemap="#image-map">
+
+    <!-- Mapa de áreas para la imagen -->
+    <map name="image-map">
+        <area shape="rect" coords="0,0,20,20" href="https://www.example.com" alt="Enlace de ejemplo">
+    </map>
+
+    <!-- Iframe que carga un archivo HTML -->
+    <iframe src="/src/html/example.html" width="600" height="400" title="Iframe de ejemplo"></iframe>
+
+    <!-- Iframe que muestra un mapa de Google -->
+    <div style="width: 100%"></div>
+        <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+            <a href="https://www.mapsdirections.info/fr/calculer-la-population-sur-une-carte">Carte démographique</a>
+        </iframe>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>El contenido del pie de página va aquí.</p>
+    </footer>
+
+    <!-- Canvas para dibujar gráficos -->
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+
+    <!-- Tabla con encabezados y datos -->
+    <table>
+        <thead>
+            <tr>
+                <th>Columna 1</th>
+                <th>Columna 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Encabezado 1</th>
+                <th>Encabezado 2</th>
+            </tr>
+            <tr>
+                <td>Dato 1</td>
+                <td>Dato 2</td>
+            </tr>
+            <tr>
+                <td>Dato 3</td>
+                <td>Dato 4</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Formulario con campos de texto y correo -->
+    <form id="myForm" action="/submit" method="post">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+<script>
+    // Obtener el canvas y su contexto
+    const canvas = document.getElementById('myCanvas');
+    const ctx = canvas.getContext('2d');
+
+    // Dibujar un rectángulo
+    ctx.fillStyle = 'blue';
+    ctx.fillRect(10, 10, 50, 30);
+
+    // Dibujar un círculo
+    ctx.beginPath();
+    ctx.arc(100, 50, 20, 0, 2 * Math.PI);
+    ctx.fillStyle = 'red';
+    ctx.fill();
+
+    // Dibujar texto
+    ctx.font = '16px Arial';
+    ctx.fillStyle = 'black';
+    ctx.fillText('Hola!', 10, 80);
+
+    // Manejar el envío del formulario
+    const form = document.getElementById('myForm');
+    form.addEventListener('submit', function(e) {
+        e.preventDefault(); // Prevenir el envío normal del formulario
+        
+        // Obtener los valores de los campos
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        
+        // Mostrar alert con la información
+        alert(`Información del formulario:\n\nNombre: ${name}\nEmail: ${email}`);
+    });
+</script>
+<body>
+    <!-- Otro cuerpo (esto es incorrecto, no debe haber dos etiquetas <body>) -->
+    <p>Otro cuerpo</p>
+</body>
+</html>

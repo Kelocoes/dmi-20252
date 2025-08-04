@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de ARIA</title>
+</head>
+<body>
+    <header>
+        <h1>Ejemplo de Atributos ARIA</h1>
+    </header>
+
+    <!-- ARIA para roles -->
+    <section role="region" aria-labelledby="titulo-region">
+        <h2 id="titulo-region">Sección con role="region"</h2>
+        <p>Esta sección utiliza el atributo <code>role="region"</code> para definir un área específica de la página.</p>
+    </section>
+
+    <!-- ARIA para accesibilidad en botones -->
+    <button aria-label="Cerrar ventana">X</button>
+    <!-- El atributo aria-label proporciona una descripción accesible para el botón -->
+
+    <!-- ARIA para estados -->
+    <div role="alert" aria-live="assertive">
+        Este es un mensaje de alerta que será anunciado por los lectores de pantalla.
+    </div>
+
+    <!-- ARIA para controles expandibles -->
+    <div>
+        <button aria-expanded="false" aria-controls="contenido-expandible" id="boton-expandir">
+            Mostrar contenido
+        </button>
+        <div id="contenido-expandible" hidden>
+            <p>Este es el contenido expandible.</p>
+        </div>
+    </div>
+
+    <!-- ARIA para descripciones -->
+    <div>
+        <label for="input-nombre">Nombre:</label>
+        <input type="text" id="input-nombre" aria-describedby="descripcion-nombre">
+        <p id="descripcion-nombre">Por favor, ingresa tu nombre completo.</p>
+    </div>
+
+    <script>
+        // Ejemplo de interacción con aria-expanded
+        const botonExpandir = document.getElementById('boton-expandir');
+        const contenidoExpandible = document.getElementById('contenido-expandible');
+
+        botonExpandir.addEventListener('click', () => {
+            const isExpanded = botonExpandir.getAttribute('aria-expanded') === 'true';
+            botonExpandir.setAttribute('aria-expanded', !isExpanded);
+            contenidoExpandible.hidden = isExpanded;
+        });
+    </script>
+</body>
+</html>
