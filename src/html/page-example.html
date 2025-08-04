@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Concepts Demo</title>
+    <link rel="stylesheet" href="../css/page-example.css">
+</head>
+<body>
+    <header>
+        <h1>Demostración de Conceptos CSS</h1>
+        <nav>
+            <ul>
+                <li><a href="#selectores">Selectores</a></li>
+                <li><a href="#propiedades">Propiedades</a></li>
+                <li><a href="#medidas">Medidas</a></li>
+                <li><a href="#pseudo-clases">Pseudo-clases</a></li>
+                <li><a href="#flexbox">Flexbox</a></li>
+                <li><a href="#media-queries">Media Queries</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 1. SELECTORES -->
+        <section id="selectores" class="concept-section">
+            <h2>1. Selectores CSS</h2>
+            
+            <!-- Selector de elemento -->
+            <h3>Selector de Elemento</h3>
+            <p>Este párrafo usa selector de elemento (p)</p>
+            
+            <!-- Selector de clase -->
+            <h3>Selector de Clase</h3>
+            <p class="texto-rojo">Este párrafo tiene la clase "texto-rojo"</p>
+            <p class="texto-azul">Este párrafo tiene la clase "texto-azul"</p>
+            
+            <!-- Selector de ID -->
+            <h3>Selector de ID</h3>
+            <p id="parrafo-especial">Este párrafo tiene ID único "parrafo-especial"</p>
+            
+            <!-- Selector de atributo -->
+            <h3>Selector de Atributo</h3>
+            <input type="text" placeholder="Campo de texto">
+            <input type="email" placeholder="Campo de email">
+            
+            <!-- Selector descendiente -->
+            <h3>Selector Descendiente</h3>
+            <div class="contenedor">
+                <p>Este párrafo está dentro de .contenedor</p>
+                <span>Este span también está dentro de .contenedor</span>
+            </div>
+        </section>
+
+        <!-- 2. PROPIEDADES TÍPICAS -->
+        <section id="propiedades" class="concept-section">
+            <h2>2. Propiedades Típicamente Utilizadas</h2>
+            
+            <div class="propiedades-ejemplos">
+                <div class="box color-fondo">Color y Fondo</div>
+                <div class="box tipografia">Tipografía personalizada</div>
+                <div class="box espaciado">Margin y Padding</div>
+                <div class="box bordes">Bordes y Border-radius</div>
+                <div class="box sombras">Box-shadow y Text-shadow</div>
+                <div class="box transformacion">Transform y Transition</div>
+            </div>
+        </section>
+
+        <!-- 3. MEDIDAS ABSOLUTAS VS RELATIVAS -->
+        <section id="medidas" class="concept-section">
+            <h2>3. Medidas Absolutas vs Relativas</h2>
+            
+            <h3>Medidas Absolutas</h3>
+            <div class="medidas-ejemplos">
+                <div class="absoluta-px">200px de ancho</div>
+                <div class="absoluta-cm">5cm de ancho</div>
+                <div class="absoluta-pt">100pt de ancho</div>
+            </div>
+            
+            <h3>Medidas Relativas</h3>
+            <div class="medidas-ejemplos">
+                <div class="relativa-porcentaje">50% del contenedor</div>
+                <div class="relativa-em">10em de ancho</div>
+                <div class="relativa-rem">15rem de ancho</div>
+                <div class="relativa-vw">30vw del viewport</div>
+                <div class="relativa-vh">20vh del viewport</div>
+            </div>
+        </section>
+
+        <!-- 4. PSEUDO-CLASES -->
+        <section id="pseudo-clases" class="concept-section">
+            <h2>4. Pseudo-clases</h2>
+            
+            <h3>Pseudo-clases de Interacción</h3>
+            <button class="btn-hover">Hover sobre mí</button>
+            <button class="btn-active">Haz clic en mí</button>
+            <input type="text" class="input-focus" placeholder="Haz clic para focus">
+            
+            <h3>Pseudo-clases Estructurales</h3>
+            <ul class="lista-pseudo">
+                <li>Primer elemento (first-child)</li>
+                <li>Segundo elemento</li>
+                <li>Tercer elemento</li>
+                <li>Cuarto elemento</li>
+                <li>Último elemento (last-child)</li>
+            </ul>
+            
+            <h3>Pseudo-clases nth-child</h3>
+            <div class="grid-nth">
+                <div>1</div><div>2</div><div>3</div><div>4</div>
+                <div>5</div><div>6</div><div>7</div><div>8</div>
+            </div>
+        </section>
+
+        <!-- 5. FLEXBOX -->
+        <section id="flexbox" class="concept-section">
+            <h2>5. Flexbox</h2>
+            
+            <h3>Dirección y Justificación</h3>
+            <div class="flex-ejemplo flex-row-center">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            
+            <h3>Flex Wrap</h3>
+            <div class="flex-ejemplo flex-wrap">
+                <div class="flex-item-wide">Ancho</div>
+                <div class="flex-item-wide">Elementos</div>
+                <div class="flex-item-wide">Que</div>
+                <div class="flex-item-wide">Se</div>
+                <div class="flex-item-wide">Envuelven</div>
+            </div>
+            
+            <h3>Align Items</h3>
+            <div class="flex-ejemplo flex-align-items">
+                <div class="flex-item-tall">Alto</div>
+                <div class="flex-item">Normal</div>
+                <div class="flex-item-short">Bajo</div>
+            </div>
+            
+            <h3>Flex Grow/Shrink</h3>
+            <div class="flex-ejemplo">
+                <div class="flex-item flex-grow-1">Grow 1</div>
+                <div class="flex-item flex-grow-2">Grow 2</div>
+                <div class="flex-item flex-grow-3">Grow 3</div>
+            </div>
+        </section>
+
+        <!-- 6. MEDIA QUERIES -->
+        <section id="media-queries" class="concept-section">
+            <h2>6. Media Queries</h2>
+            
+            <div class="responsive-grid">
+                <div class="grid-item">
+                    <h3>Responsive Design</h3>
+                    <p>Esta grid cambia según el tamaño de pantalla:</p>
+                    <ul>
+                        <li>Móvil: 1 columna</li>
+                        <li>Tablet: 2 columnas</li>
+                        <li>Desktop: 3 columnas</li>
+                    </ul>
+                </div>
+                <div class="grid-item">
+                    <h3>Breakpoints</h3>
+                    <p>Puntos de quiebre comunes:</p>
+                    <ul>
+                        <li>480px - Móvil</li>
+                        <li>768px - Tablet</li>
+                        <li>1024px - Desktop</li>
+                    </ul>
+                </div>
+                <div class="grid-item">
+                    <h3>Orientación</h3>
+                    <p>También detectamos orientación del dispositivo</p>
+                </div>
+            </div>
+            
+            <div class="orientation-demo">
+                <p>Este elemento cambia color según la orientación</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Demostración de CSS Concepts</p>
+    </footer>
+</body>
+</html>

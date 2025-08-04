@@ -1,0 +1,602 @@
+/* ===== RESET Y ESTILOS BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* ===== 1. SELECTORES CSS ===== */
+
+/* Selector de elemento */
+p {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: #e8f4f8;
+    border-left: 3px solid #3498db;
+}
+
+/* Selector de clase */
+.texto-rojo {
+    color: #e74c3c;
+    font-weight: bold;
+    background-color: #fdf2f2;
+    border-left-color: #e74c3c;
+}
+
+.texto-azul {
+    color: #3498db;
+    font-style: italic;
+    background-color: #f0f8ff;
+    border-left-color: #3498db;
+}
+
+/* Selector de ID */
+#parrafo-especial {
+    background: linear-gradient(45deg, #f39c12, #e67e22);
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1rem;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Selector de atributo */
+input[type="text"] {
+    background-color: #ecf0f1;
+    border: 2px solid #3498db;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin: 0.5rem;
+}
+
+input[type="email"] {
+    background-color: #e8f5e8;
+    border: 2px solid #27ae60;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin: 0.5rem;
+}
+
+/* Selector descendiente */
+.contenedor p {
+    background-color: #d5dbdb;
+    color: #2c3e50;
+    border-left-color: #95a5a6;
+}
+
+.contenedor span {
+    background-color: #f8c471;
+    padding: 0.25rem 0.5rem;
+    border-radius: 15px;
+    display: inline-block;
+    margin: 0.5rem;
+}
+
+/* ===== 2. PROPIEDADES TÍPICAMENTE UTILIZADAS ===== */
+
+.propiedades-ejemplos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.box {
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.color-fondo {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    font-weight: bold;
+}
+
+.tipografia {
+    font-family: 'Georgia', serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+.espaciado {
+    margin: 2rem;
+    padding: 2rem;
+    background-color: #e74c3c;
+    color: white;
+    border: 5px dashed #c0392b;
+}
+
+.bordes {
+    border: 3px solid #f39c12;
+    border-radius: 20px;
+    background-color: #fef9e7;
+    color: #d68910;
+    border-style: dotted;
+}
+
+.sombras {
+    background-color: #27ae60;
+    color: white;
+    box-shadow: 0 10px 20px rgba(39, 174, 96, 0.4);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.transformacion {
+    background-color: #9b59b6;
+    color: white;
+    transform: rotate(-2deg) scale(1.05);
+}
+
+.transformacion:hover {
+    transform: rotate(0deg) scale(1.1);
+    background-color: #8e44ad;
+}
+
+/* ===== 3. MEDIDAS ABSOLUTAS VS RELATIVAS ===== */
+
+.medidas-ejemplos {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.medidas-ejemplos > div {
+    padding: 1rem;
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Medidas Absolutas */
+.absoluta-px {
+    width: 200px;
+    background-color: #e74c3c;
+}
+
+.absoluta-cm {
+    width: 5cm;
+    background-color: #f39c12;
+}
+
+.absoluta-pt {
+    width: 100pt;
+    background-color: #9b59b6;
+}
+
+/* Medidas Relativas */
+.relativa-porcentaje {
+    width: 50%;
+    background-color: #27ae60;
+}
+
+.relativa-em {
+    width: 10em;
+    background-color: #16a085;
+}
+
+.relativa-rem {
+    width: 15rem;
+    background-color: #2980b9;
+}
+
+.relativa-vw {
+    width: 30vw;
+    background-color: #8e44ad;
+}
+
+.relativa-vh {
+    height: 20vh;
+    background-color: #d35400;
+}
+
+/* ===== 4. PSEUDO-CLASES ===== */
+
+/* Pseudo-clases de interacción */
+.btn-hover {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-hover:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.btn-active {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.btn-active:active {
+    background-color: #c0392b;
+    transform: scale(0.98);
+}
+
+.input-focus {
+    padding: 1rem;
+    border: 2px solid #bdc3c7;
+    border-radius: 5px;
+    margin: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.input-focus:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.3);
+    transform: scale(1.02);
+}
+
+/* Pseudo-clases estructurales */
+.lista-pseudo {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-pseudo li {
+    padding: 1rem;
+    margin: 0.5rem 0;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+}
+
+.lista-pseudo li:first-child {
+    background-color: #e74c3c;
+    color: white;
+    font-weight: bold;
+}
+
+.lista-pseudo li:last-child {
+    background-color: #27ae60;
+    color: white;
+    font-weight: bold;
+}
+
+.lista-pseudo li:nth-child(even) {
+    background-color: #3498db;
+    color: white;
+}
+
+.lista-pseudo li:nth-child(odd):not(:first-child) {
+    background-color: #f39c12;
+    color: white;
+}
+
+/* Grid con nth-child */
+.grid-nth {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.grid-nth div {
+    padding: 2rem;
+    background-color: #bdc3c7;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+.grid-nth div:nth-child(3n+1) {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.grid-nth div:nth-child(3n+2) {
+    background-color: #f39c12;
+    color: white;
+}
+
+.grid-nth div:nth-child(3n) {
+    background-color: #27ae60;
+    color: white;
+}
+
+/* ===== 5. FLEXBOX ===== */
+
+.flex-ejemplo {
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    min-height: 100px;
+}
+
+.flex-row-center {
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.flex-align-items {
+    align-items: center;
+    gap: 1rem;
+}
+
+.flex-item {
+    background-color: #3498db;
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    min-width: 80px;
+}
+
+.flex-item-wide {
+    background-color: #9b59b6;
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    min-width: 150px;
+}
+
+.flex-item-tall {
+    background-color: #e74c3c;
+    color: white;
+    padding: 2rem 1rem;
+    border-radius: 5px;
+    text-align: center;
+    height: 100px;
+}
+
+.flex-item-short {
+    background-color: #f39c12;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-align: center;
+    height: 40px;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+    background-color: #27ae60;
+}
+
+.flex-grow-2 {
+    flex-grow: 2;
+    background-color: #16a085;
+}
+
+.flex-grow-3 {
+    flex-grow: 3;
+    background-color: #2980b9;
+}
+
+/* ===== 6. MEDIA QUERIES ===== */
+
+.responsive-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.grid-item {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-left: 4px solid #3498db;
+}
+
+.orientation-demo {
+    background-color: #e74c3c;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+/* ===== ESTILOS GENERALES ===== */
+
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.concept-section {
+    background-color: white;
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-top: 5px solid #3498db;
+}
+
+.concept-section h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.concept-section h3 {
+    color: #34495e;
+    margin: 1.5rem 0 1rem 0;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 0.5rem;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+/* ===== MEDIA QUERIES EJEMPLOS ===== */
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+    .responsive-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    nav ul {
+        gap: 3rem;
+    }
+    
+    .medidas-ejemplos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .medidas-ejemplos > div {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    .responsive-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .propiedades-ejemplos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .grid-nth {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Orientación landscape */
+@media screen and (orientation: landscape) {
+    .orientation-demo {
+        background-color: #27ae60;
+    }
+    
+    .orientation-demo::after {
+        content: " (Landscape)";
+    }
+}
+
+/* Orientación portrait */
+@media screen and (orientation: portrait) {
+    .orientation-demo {
+        background-color: #e74c3c;
+    }
+    
+    .orientation-demo::after {
+        content: " (Portrait)";
+    }
+}
+
+/* Pantallas pequeñas */
+@media screen and (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .concept-section {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+    
+    main {
+        padding: 1rem;
+    }
+    
+    .flex-ejemplo {
+        flex-direction: column;
+    }
+    
+    .grid-nth {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Print styles */
+@media print {
+    header, footer {
+        background: none !important;
+        color: black !important;
+    }
+    
+    .concept-section {
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+    
+    * {
+        background: none !important;
+        color: black !important;
+    }
+}
