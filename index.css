@@ -1,9 +1,89 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Container */
+#container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Title and description */
+.title {
+    font-size: 2rem;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* List items */
 #itemList {
-    max-height: 150px; /* Limita la altura para forzar el scroll */
-    overflow-y: scroll; /* Habilita el scroll vertical */
-    border: 1px solid black;
+    list-style-type: none;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.item {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #e9ecef;
+    border-radius: 5px;
+}
+
+/* Form */
+#myForm {
+    margin-top: 20px;
+}
+
+#inputField {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#myCheckbox {
+    margin-right: 10px;
+}
+
+#submitForm {
+    background-color: #28a745;
+}
+
+#submitForm:hover {
+    background-color: #218838;
 }
 
 .highlight {
-    background-color: yellow; /* Resalta el elemento seleccionado */
+    background-color: #ffeb3b;
 }

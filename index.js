@@ -14,30 +14,32 @@ document.addEventListener('DOMContentLoaded', function () {
     const myCheckbox = document.getElementById('myCheckbox');
     const submitFormBtn = document.getElementById('submitForm');
 
-    console.dir({
-        title,
-        description,
-        content,
-        changeTextBtn,
-        addElementBtn,
-        toggleClassBtn,
-        itemList,
-        form,
-        inputField,
-        myCheckbox,
-        submitFormBtn
-    })
+    // console.dir({
+    //     title,
+    //     description,
+    //     content,
+    //     changeTextBtn,
+    //     addElementBtn,
+    //     toggleClassBtn,
+    //     itemList,
+    //     form,
+    //     inputField,
+    //     myCheckbox,
+    //     submitFormBtn
+    // })
 
     changeTextBtn.addEventListener('click', () => {
         const textElement = document.querySelector('.text');
         textElement.textContent = 'Text Changed!';
-        title.setAttribute('style', 'color: blue;');
+        title.setAttribute('style', 'color: red;');
     });
 
     addElementBtn.addEventListener('click', () => {
         const newItem = document.createElement('li');
+        newItem.className = 'item';
         newItem.textContent = `Item ${itemList.children.length + 1}`;
         itemList.appendChild(newItem);
+        itemList.scrollTo(0, itemList.scrollHeight);
     });
 
     toggleClassBtn.addEventListener('click', () => {
@@ -50,6 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const inputText = inputField.value;
         const isChecked = myCheckbox.checked;
         alert(`Input: ${inputText}, Checked: ${isChecked}`);
+        form.reset(); // Resetea el formulario
     });
 
     const newParagraph = document.createElement('p');
@@ -67,7 +70,4 @@ document.addEventListener('DOMContentLoaded', function () {
     const itemListWidth = itemList.offsetWidth;
     const itemListHeight = itemList.offsetHeight;
     console.log(`ItemList width: ${itemListWidth}, height: ${itemListHeight}`);
-
-    // Scroll to the bottom of the list
-    itemList.scrollTo(0, itemList.scrollHeight);
 });
