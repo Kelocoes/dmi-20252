@@ -1,0 +1,53 @@
+{
+    "compilerOptions": {
+
+        // Especifica el directorio de salida para los archivos compilados.
+        "outDir": "./dist",
+
+        // Especifica la versión de JavaScript que se generará. En este caso, ES2022.
+        "target": "ES2022",
+
+        // Define el sistema de módulos que se usará. Aquí se utiliza ESNext para compatibilidad con módulos modernos.
+        "module": "ESNext",
+
+        // Especifica las bibliotecas que estarán disponibles durante la compilación. Incluye ES2022, DOM y DOM.Iterable.
+        "lib": ["ES2022", "DOM", "DOM.Iterable"],
+
+        // Omite la verificación de tipos en los archivos de definición de bibliotecas (.d.ts).
+        "skipLibCheck": true,
+
+        /* Bundler mode */
+        // Configura la resolución de módulos para trabajar con herramientas de empaquetado como Vite o Webpack.
+        "moduleResolution": "bundler",
+
+        // No genera archivos de salida, solo realiza la verificación de tipos.
+        "noEmit": true,
+
+        // Permite importar archivos TypeScript con extensiones explícitas (.ts, .tsx).
+        "allowImportingTsExtensions": true,
+
+        // Mantiene la sintaxis de los módulos importados sin transformarla.
+        "verbatimModuleSyntax": true,
+
+        /* Linting */
+        // Habilita el modo estricto de TypeScript, que incluye varias verificaciones rigurosas.
+        "strict": true,
+
+        // Marca como error las variables locales declaradas pero no utilizadas.
+        "noUnusedLocals": true,
+
+        // Marca como error los parámetros de funciones que no se utilizan.
+        "noUnusedParameters": true,
+
+        // Previene errores en casos `switch` donde no se manejen todas las posibilidades.
+        "noFallthroughCasesInSwitch": true,
+
+        // Marca como error las importaciones que no tienen efectos secundarios explícitos.
+        "noUncheckedSideEffectImports": true,
+
+        // Evita la inferencia implícita del tipo `any` en variables y parámetros.
+        "noImplicitAny": true
+    },
+    // Incluye únicamente los archivos dentro de la carpeta `src` para la compilación.
+    "include": ["src"]
+}
