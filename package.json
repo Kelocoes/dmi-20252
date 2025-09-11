@@ -6,7 +6,8 @@
     "scripts": {
         "dev": "vite",
         "build": "tsc -b && vite build",
-        "lint": "eslint .",
+        "lint": "eslint src/ --ext .ts,.tsx,.jsx --report-unused-disable-directives",
+        "lint:fix": "eslint src/ --ext .ts,.tsx,.jsx --report-unused-disable-directives --fix",
         "preview": "vite preview"
     },
     "dependencies": {
@@ -19,6 +20,8 @@
         "@types/react-dom": "^19.1.7",
         "@vitejs/plugin-react": "^5.0.0",
         "eslint": "^9.33.0",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-react": "^7.37.5",
         "eslint-plugin-react-hooks": "^5.2.0",
         "eslint-plugin-react-refresh": "^0.4.20",
         "globals": "^16.3.0",
