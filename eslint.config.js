@@ -24,11 +24,26 @@ export default defineConfig([
             'react/prop-types': 0,
             'react/react-in-jsx-scope': 'off',
             'max-len': ['error', { code: 250 }],
+            'quotes': ['error', 'double'],
             'no-unused-vars': ['error', {
                 vars: 'all',
                 args: 'all',
                 argsIgnorePattern: '^_'
             }],
+            'import/order': [
+                'error',
+                {
+                    'groups': [
+                        'builtin',
+                        'external',
+                        'internal',
+                        'parent',
+                        'sibling',
+                        'index'
+                    ],
+                    'newlines-between': 'always'
+                }
+            ],
             'indent': ['error', 4],
             'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 1 }],
             'block-spacing': 'error',
