@@ -1,17 +1,19 @@
-import { useState } from 'react';
-import './App.css';
+import { useState } from "react";
+
+import reactLogo from "./assets/react.svg";
+import "./App.css";
 
 function App() {
     const [count, setCount] = useState(0);
 
     return (
         <>
-            <div>
+            <div className="flex justify-center items-center">
                 <a href="https://vite.dev" target="_blank" rel="noreferrer">
-                    <img src="vite.svg" className="logo" alt="Vite logo" />
+                    <img src={`${import.meta.env.BASE_URL}/vite.svg`} className="logo" alt="Vite logo" />
                 </a>
                 <a href="https://react.dev" target="_blank" rel="noreferrer">
-                    <img src="./assets/react.svg" className="logo react" alt="React logo" />
+                    <img src={reactLogo} className="logo react" alt="React logo" />
                 </a>
             </div>
             <h1>Vite + React</h1>
