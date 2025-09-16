@@ -7,6 +7,7 @@ function Button() {
     function changeState() {
         console.info("Estoy dandole click");
         setIsUserActive(prev => !prev);
+        console.info(isUserActive); 
     }
 
     return (
