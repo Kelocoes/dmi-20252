@@ -1,11 +1,14 @@
 import "./App.css";
-import LandingPage from "./pages/LandingPage";
+import RealExamplesPage from "./pages/realExamples/RealExamplesPage";
+// import LandingPage from "./pages/Landing/LandingPage";
+// import PropsPage from "./pages/props/PropsPage";
 
 function App() {
-
     return (
         <div className="App">
-            <LandingPage />
+            {/* <LandingPage /> */}
+            {/* <PropsPage /> */}
+            <RealExamplesPage />
         </div>
     );
 }

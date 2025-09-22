@@ -1,0 +1,398 @@
+[
+    {
+        "id": 1,
+        "user": "Pedro Martínez",
+        "date": "2025-09-02T09:11:00",
+        "content": "Este es el contenido del post número 1.",
+        "image": "https://picsum.photos/200/200?random=101",
+        "likes": 3,
+        "comments": [
+            {
+                "user": "Carlos Pérez",
+                "text": "¡Qué buena energía!",
+                "date": "2025-09-01T11:00:00"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "user": "Sofía Ramírez",
+        "date": "2025-09-03T10:12:00",
+        "content": "Este es el contenido del post número 2.",
+        "image": "https://picsum.photos/200/200?random=102",
+        "likes": 6,
+        "comments": [
+            {
+                "user": "Carlos Pérez",
+                "text": "¡Qué buena energía!",
+                "date": "2025-09-01T11:00:00"
+            },
+            {
+                "user": "Lucía Gómez",
+                "text": "Me alegra mucho 🥰",
+                "date": "2025-09-01T11:15:00"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "user": "Diego López",
+        "date": "2025-09-04T11:13:00",
+        "content": "Este es el contenido del post número 3.",
+        "image": "https://picsum.photos/200/200?random=103",
+        "likes": 9,
+        "comments": [
+            {
+                "user": "Carlos Pérez",
+                "text": "¡Qué buena energía!",
+                "date": "2025-09-01T11:00:00"
+            },
+            {
+                "user": "Lucía Gómez",
+                "text": "Me alegra mucho 🥰",
+                "date": "2025-09-01T11:15:00"
+            },
+            {
+                "user": "Laura Ruiz",
+                "text": "Se ve deliciosa 😋",
+                "date": "2025-09-02T09:45:00"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "user": "Lucía Gómez",
+        "date": "2025-09-05T12:14:00",
+        "content": "Este es el contenido del post número 4.",
+        "image": "https://picsum.photos/200/200?random=104",
+        "likes": 12,
+        "comments": [
+            {
+                "user": "Carlos Pérez",
+                "text": "¡Qué buena energía!",
+                "date": "2025-09-01T11:00:00"
+            },
+            {
+                "user": "Lucía Gómez",
+                "text": "Me alegra mucho 🥰",
+                "date": "2025-09-01T11:15:00"
+            },
+            {
+                "user": "Laura Ruiz",
+                "text": "Se ve deliciosa 😋",
+                "date": "2025-09-02T09:45:00"
+            },
+            {
+                "user": "Ana Torres",
+                "text": "Totalmente de acuerdo 😄",
+                "date": "2025-09-03T08:20:00"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "user": "Laura Ruiz",
+        "date": "2025-09-06T13:15:00",
+        "content": "Este es el contenido del post número 5.",
+        "image": "https://picsum.photos/200/200?random=105",
+        "likes": 15,
+        "comments": []
+    },
+    {
+        "id": 6,
+        "user": "Carlos Pérez",
+        "date": "2025-09-07T14:16:00",
+        "content": "Este es el contenido del post número 6.",
+        "image": "https://picsum.photos/200/200?random=106",
+        "likes": 18,
+        "comments": [
+            {
+                "user": "Carlos Pérez",
+                "text": "¡Qué buena energía!",
+                "date": "2025-09-01T11:00:00"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "user": "Mariana Castro",
+        "date": "2025-09-08T15:17:00",
+        "content": "Este es el contenido del post número 7.",
+        "image": "https://picsum.photos/200/200?random=107",
+        "likes": 21,
+        "comments": [
+            {
+                "user": "Carlos Pérez",
+                "text": "¡Qué buena energía!",
+                "date": "2025-09-01T11:00:00"
+            },
+            {
+                "user": "Lucía Gómez",
+                "text": "Me alegra mucho 🥰",
+                "date": "2025-09-01T11:15:00"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "user": "José Hernández",
+        "date": "2025-09-09T16:18:00",
+        "content": "Este es el contenido del post número 8.",
+        "image": "https://picsum.photos/200/200?random=108",
+        "likes": 24,
+        "comments": [
+            {
+                "user": "Carlos Pérez",
+                "text": "¡Qué buena energía!",
+                "date": "2025-09-01T11:00:00"
+            },
+            {
+                "user": "Lucía Gómez",
+                "text": "Me alegra mucho 🥰",
+                "date": "2025-09-01T11:15:00"
+            },
+            {
+                "user": "Laura Ruiz",
+                "text": "Se ve deliciosa 😋",
+                "date": "2025-09-02T09:45:00"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "user": "Andrés Mejía",
+        "date": "2025-09-10T17:19:00",
+        "content": "Este es el contenido del post número 9.",
+        "image": "https://picsum.photos/200/200?random=109",
+        "likes": 27,
+        "comments": [
+            {
+                "user": "Carlos Pérez",
+                "text": "¡Qué buena energía!",
+                "date": "2025-09-01T11:00:00"
+            },
+            {
+                "user": "Lucía Gómez",
+                "text": "Me alegra mucho 🥰",
+                "date": "2025-09-01T11:15:00"
+            },
+            {
+                "user": "Laura Ruiz",
+                "text": "Se ve deliciosa 😋",
+                "date": "2025-09-02T09:45:00"
+            },
+            {
+                "user": "Ana Torres",
+                "text": "Totalmente de acuerdo 😄",
+                "date": "2025-09-03T08:20:00"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "user": "Valentina Ríos",
+        "date": "2025-09-11T18:20:00",
+        "content": "Este es el contenido del post número 10.",
+        "image": "https://picsum.photos/200/200?random=110",
+        "likes": 30,
+        "comments": []
+    },
+    {
+        "id": 11,
+        "user": "Camilo Ortega",
+        "date": "2025-09-12T19:21:00",
+        "content": "Este es el contenido del post número 11.",
+        "image": "https://picsum.photos/200/200?random=111",
+        "likes": 33,
+        "comments": [
+            {
+                "user": "Carlos Pérez",
+                "text": "¡Qué buena energía!",
+                "date": "2025-09-01T11:00:00"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "user": "Fernanda Silva",
+        "date": "2025-09-13T08:22:00",
+        "content": "Este es el contenido del post número 12.",
+        "image": "https://picsum.photos/200/200?random=112",
+        "likes": 36,
+        "comments": [
+            {
+                "user": "Carlos Pérez",
+                "text": "¡Qué buena energía!",
+                "date": "2025-09-01T11:00:00"
+            },
+            {
+                "user": "Lucía Gómez",
+                "text": "Me alegra mucho 🥰",
+                "date": "2025-09-01T11:15:00"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "user": "David Morales",
+        "date": "2025-09-14T09:23:00",
+        "content": "Este es el contenido del post número 13.",
+        "image": "https://picsum.photos/200/200?random=113",
+        "likes": 39,
+        "comments": [
+            {
+                "user": "Carlos Pérez",
+                "text": "¡Qué buena energía!",
+                "date": "2025-09-01T11:00:00"
+            },
+            {
+                "user": "Lucía Gómez",
+                "text": "Me alegra mucho 🥰",
+                "date": "2025-09-01T11:15:00"
+            },
+            {
+                "user": "Laura Ruiz",
+                "text": "Se ve deliciosa 😋",
+                "date": "2025-09-02T09:45:00"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "user": "Isabel Romero",
+        "date": "2025-09-15T10:24:00",
+        "content": "Este es el contenido del post número 14.",
+        "image": "https://picsum.photos/200/200?random=114",
+        "likes": 42,
+        "comments": [
+            {
+                "user": "Carlos Pérez",
+                "text": "¡Qué buena energía!",
+                "date": "2025-09-01T11:00:00"
+            },
+            {
+                "user": "Lucía Gómez",
+                "text": "Me alegra mucho 🥰",
+                "date": "2025-09-01T11:15:00"
+            },
+            {
+                "user": "Laura Ruiz",
+                "text": "Se ve deliciosa 😋",
+                "date": "2025-09-02T09:45:00"
+            },
+            {
+                "user": "Ana Torres",
+                "text": "Totalmente de acuerdo 😄",
+                "date": "2025-09-03T08:20:00"
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "user": "Mateo Vargas",
+        "date": "2025-09-16T11:25:00",
+        "content": "Este es el contenido del post número 15.",
+        "image": "https://picsum.photos/200/200?random=115",
+        "likes": 45,
+        "comments": []
+    },
+    {
+        "id": 16,
+        "user": "Juliana Pineda",
+        "date": "2025-09-17T12:26:00",
+        "content": "Este es el contenido del post número 16.",
+        "image": "https://picsum.photos/200/200?random=116",
+        "likes": 48,
+        "comments": [
+            {
+                "user": "Carlos Pérez",
+                "text": "¡Qué buena energía!",
+                "date": "2025-09-01T11:00:00"
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "user": "Felipe Sánchez",
+        "date": "2025-09-18T13:27:00",
+        "content": "Este es el contenido del post número 17.",
+        "image": "https://picsum.photos/200/200?random=117",
+        "likes": 1,
+        "comments": [
+            {
+                "user": "Carlos Pérez",
+                "text": "¡Qué buena energía!",
+                "date": "2025-09-01T11:00:00"
+            },
+            {
+                "user": "Lucía Gómez",
+                "text": "Me alegra mucho 🥰",
+                "date": "2025-09-01T11:15:00"
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "user": "Gabriela Torres",
+        "date": "2025-09-19T14:28:00",
+        "content": "Este es el contenido del post número 18.",
+        "image": "https://picsum.photos/200/200?random=118",
+        "likes": 4,
+        "comments": [
+            {
+                "user": "Carlos Pérez",
+                "text": "¡Qué buena energía!",
+                "date": "2025-09-01T11:00:00"
+            },
+            {
+                "user": "Lucía Gómez",
+                "text": "Me alegra mucho 🥰",
+                "date": "2025-09-01T11:15:00"
+            },
+            {
+                "user": "Laura Ruiz",
+                "text": "Se ve deliciosa 😋",
+                "date": "2025-09-02T09:45:00"
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "user": "Sebastián León",
+        "date": "2025-09-20T15:29:00",
+        "content": "Este es el contenido del post número 19.",
+        "image": "https://picsum.photos/200/200?random=119",
+        "likes": 7,
+        "comments": [
+            {
+                "user": "Carlos Pérez",
+                "text": "¡Qué buena energíca!",
+                "date": "2025-09-01T11:00:00"
+            },
+            {
+                "user": "Lucía Gómez",
+                "text": "Me alegra mucho 🥰",
+                "date": "2025-09-01T11:15:00"
+            },
+            {
+                "user": "Laura Ruiz",
+                "text": "Se ve deliciosa 😋",
+                "date": "2025-09-02T09:45:00"
+            },
+            {
+                "user": "Ana Torres",
+                "text": "Totalmente de acuerdo 😄",
+                "date": "2025-09-03T08:20:00"
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "user": "Ana Torres",
+        "date": "2025-09-21T16:30:00",
+        "content": "Este es el contenido del post número 20.",
+        "image": "https://picsum.photos/200/200?random=120",
+        "likes": 10,
+        "comments": []
+    }
+]
