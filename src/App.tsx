@@ -1,14 +1,11 @@
 import "./App.css";
-import Button from "./components/Button";
-import Counter from "./components/Counter";
+import LandingPage from "./pages/LandingPage";
 
 function App() {
 
     return (
-        <div>
-            <h1>Mi página principal</h1>
-            <Button />
-            <Counter />
+        <div className="App">
+            <LandingPage />
         </div>
     );
 }
