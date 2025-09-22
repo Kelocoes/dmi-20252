@@ -1,5 +1,6 @@
 import "./App.css";
-import RealExamplesPage from "./pages/realExamples/RealExamplesPage";
+import TailwindPage from "./pages/tailwind/TailwindPage";
+// import RealExamplesPage from "./pages/realExamples/RealExamplesPage";
 // import LandingPage from "./pages/Landing/LandingPage";
 // import PropsPage from "./pages/props/PropsPage";
 
@@ -8,7 +9,8 @@ function App() {
         <div className="App">
             {/* <LandingPage /> */}
             {/* <PropsPage /> */}
-            <RealExamplesPage />
+            {/* <RealExamplesPage /> */}
+            <TailwindPage />
         </div>
     );
 }
