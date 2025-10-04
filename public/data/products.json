@@ -1,0 +1,243 @@
+[
+    {
+        "id": 1,
+        "name": "Sneakers Urban",
+        "description": "Zapatillas deportivas cómodas y modernas.",
+        "price": 79.99,
+        "category": "Shoes",
+        "image": "https://picsum.photos/id/1011/400/300",
+        "tags": [
+            { "id": 1, "name": "Fashion" },
+            { "id": 2, "name": "Sport" },
+            { "id": 3, "name": "TagNuevo" }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Backpack Explorer",
+        "description": "Mochila resistente para viajes y uso diario.",
+        "price": 59.99,
+        "category": "Accessories",
+        "image": "https://picsum.photos/id/1025/400/300",
+        "tags": [
+            { "id": 4, "name": "Travel" },
+            { "id": 1, "name": "Fashion" }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Smartwatch Fit",
+        "description": "Reloj inteligente con monitor de salud.",
+        "price": 129.99,
+        "category": "Electronics",
+        "image": "https://picsum.photos/id/1035/400/300",
+        "tags": [
+            { "id": 5, "name": "Tech" },
+            { "id": 6, "name": "Fitness" }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Gaming Mouse Pro",
+        "description": "Ratón ergonómico con retroiluminación RGB.",
+        "price": 49.99,
+        "category": "Electronics",
+        "image": "https://picsum.photos/id/1062/400/300",
+        "tags": [
+            { "id": 7, "name": "Gaming" },
+            { "id": 5, "name": "Tech" }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Office Chair Comfort",
+        "description": "Silla ergonómica ajustable para oficina.",
+        "price": 199.99,
+        "category": "Furniture",
+        "image": "https://picsum.photos/id/1077/400/300",
+        "tags": [
+            { "id": 8, "name": "Office" },
+            { "id": 9, "name": "Home" }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Bluetooth Speaker",
+        "description": "Altavoz portátil con sonido envolvente.",
+        "price": 39.99,
+        "category": "Electronics",
+        "image": "https://picsum.photos/id/1084/400/300",
+        "tags": [
+            { "id": 10, "name": "Music" },
+            { "id": 11, "name": "Portable" }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Laptop Stand",
+        "description": "Soporte ajustable para portátiles.",
+        "price": 29.99,
+        "category": "Accessories",
+        "image": "https://picsum.photos/id/1081/400/300",
+        "tags": [
+            { "id": 8, "name": "Office" },
+            { "id": 5, "name": "Tech" }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Headphones Max",
+        "description": "Auriculares con cancelación de ruido.",
+        "price": 149.99,
+        "category": "Electronics",
+        "image": "https://picsum.photos/id/1059/400/300",
+        "tags": [
+            { "id": 10, "name": "Music" },
+            { "id": 5, "name": "Tech" }
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Sunglasses Polar",
+        "description": "Gafas de sol con protección UV400.",
+        "price": 24.99,
+        "category": "Fashion",
+        "image": "https://picsum.photos/id/1005/400/300",
+        "tags": [
+            { "id": 1, "name": "Fashion" },
+            { "id": 4, "name": "Travel" }
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Desk Lamp LED",
+        "description": "Lámpara con luz ajustable para escritorio.",
+        "price": 34.99,
+        "category": "Furniture",
+        "image": "https://picsum.photos/id/1015/400/300",
+        "tags": [
+            { "id": 9, "name": "Home" },
+            { "id": 8, "name": "Office" }
+        ]
+    },
+    {
+        "id": 11,
+        "name": "Winter Jacket",
+        "description": "Chaqueta abrigada para clima frío.",
+        "price": 89.99,
+        "category": "Clothing",
+        "image": "https://picsum.photos/id/1022/400/300",
+        "tags": [
+            { "id": 1, "name": "Fashion" },
+            { "id": 12, "name": "Winter" }
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Coffee Maker",
+        "description": "Cafetera automática con temporizador.",
+        "price": 99.99,
+        "category": "Appliances",
+        "image": "https://picsum.photos/id/1039/400/300",
+        "tags": [
+            { "id": 13, "name": "Kitchen" },
+            { "id": 14, "name": "Appliances" }
+        ]
+    },
+    {
+        "id": 13,
+        "name": "Wireless Keyboard",
+        "description": "Teclado inalámbrico compacto y silencioso.",
+        "price": 44.99,
+        "category": "Electronics",
+        "image": "https://picsum.photos/id/1043/400/300",
+        "tags": [
+            { "id": 8, "name": "Office" },
+            { "id": 5, "name": "Tech" }
+        ]
+    },
+    {
+        "id": 14,
+        "name": "Yoga Mat Pro",
+        "description": "Colchoneta antideslizante para yoga y pilates.",
+        "price": 29.99,
+        "category": "Sports",
+        "image": "https://picsum.photos/id/1049/400/300",
+        "tags": [
+            { "id": 6, "name": "Fitness" },
+            { "id": 15, "name": "Wellness" }
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Smart TV 50”",
+        "description": "Televisor inteligente con 4K UHD.",
+        "price": 399.99,
+        "category": "Electronics",
+        "image": "https://picsum.photos/id/1052/400/300",
+        "tags": [
+            { "id": 5, "name": "Tech" },
+            { "id": 9, "name": "Home" }
+        ]
+    },
+    {
+        "id": 16,
+        "name": "Running Shoes",
+        "description": "Zapatos ligeros para correr largas distancias.",
+        "price": 69.99,
+        "category": "Shoes",
+        "image": "https://picsum.photos/id/1067/400/300",
+        "tags": [
+            { "id": 2, "name": "Sport" },
+            { "id": 6, "name": "Fitness" }
+        ]
+    },
+    {
+        "id": 17,
+        "name": "Leather Wallet",
+        "description": "Billetera de cuero genuino.",
+        "price": 39.99,
+        "category": "Accessories",
+        "image": "https://picsum.photos/id/1060/400/300",
+        "tags": [
+            { "id": 1, "name": "Fashion" },
+            { "id": 16, "name": "Classic" }
+        ]
+    },
+    {
+        "id": 18,
+        "name": "Table Set",
+        "description": "Juego de mesa para comedor de 4 personas.",
+        "price": 299.99,
+        "category": "Furniture",
+        "image": "https://picsum.photos/id/1074/400/300",
+        "tags": [
+            { "id": 9, "name": "Home" },
+            { "id": 17, "name": "Dining" }
+        ]
+    },
+    {
+        "id": 19,
+        "name": "Electric Kettle",
+        "description": "Hervidor eléctrico rápido y seguro.",
+        "price": 24.99,
+        "category": "Appliances",
+        "image": "https://picsum.photos/id/1057/300/300",
+        "tags": [
+            { "id": 13, "name": "Kitchen" },
+            { "id": 14, "name": "Appliances" }
+        ]
+    },
+    {
+        "id": 20,
+        "name": "Drone Camera",
+        "description": "Drone con cámara HD y control remoto.",
+        "price": 499.99,
+        "category": "Electronics",
+        "image": "https://picsum.photos/id/1056/400/300",
+        "tags": [
+            { "id": 5, "name": "Tech" },
+            { "id": 18, "name": "Photography" }
+        ]
+    }
+]
