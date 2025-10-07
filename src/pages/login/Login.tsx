@@ -3,6 +3,7 @@ import React, { useRef } from "react";
 import { useNavigate } from "react-router";
 
 import { useAuth } from "../../layout/Auth/Auth";
+import { login } from "../../services/authService";
 
 export default function Login() {
     const formRef = useRef<HTMLFormElement>(null);
@@ -15,12 +16,13 @@ export default function Login() {
         const form = formRef.current;
         if (form) {
             const formData = new FormData(form);
-            const username = formData.get("username");
-            const password = formData.get("password");
+            const username = formData.get("username") as string;
+            const password = formData.get("password") as string;
             console.info(username, password);
             // Lógica de verificación de login
-            setUser({ username: username as string });
-            navigate("/feed");
+            login(username, password);
+            // setUser({ username: username as string });
+            // navigate("/feed");
         }
     };
 
