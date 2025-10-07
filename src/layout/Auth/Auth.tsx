@@ -1,60 +1,45 @@
-import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
+import React, { createContext, useContext, useEffect, useState, type ReactNode } from "react";
 import { Outlet } from "react-router";
 
 type User = {
-    id: string;
-    username?: string;
-    email: string;
-    password?: string;
+    username: string;
 };
 
 type AuthContextType = {
-    user: User | null;
     isAuthenticated: boolean;
-    login: (_email: string, _password: string) => void;
-    register: (_username: string, _email: string, _password: string) => void;
-    isLoading: boolean;
+    user: User | null;
+    setUser: React.Dispatch<React.SetStateAction<User | null>>;
 };
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 const AuthProvider = ({ children }: { children: ReactNode }) => {
-    const [user, setUser] = useState<User | null>(null);
-    const [isLoading, setIsLoading] = useState(true);
-
-    const login = (email: string, password: string) => {
-        // Simulación de login
-        const userData = { id: "1", email, password };
-        setUser(userData);
-        localStorage.setItem("user", JSON.stringify(userData));
-    };
-
-    const register = (username: string, email: string, password: string) => {
-        // Simulación de registro
-        const userData = { id: "1", username, email, password };
-        setUser(userData);
-        localStorage.setItem("user", JSON.stringify(userData));
-    };
+    const [user, setUser] = useState<User | null>(() => {
+        const stored = localStorage.getItem("user");
+        if (!stored) return null;
+        try {
+            return JSON.parse(stored) as User;
+        } catch {
+            localStorage.removeItem("user");
+            return null;
+        }
+    });
 
     useEffect(() => {
-        const storedUser = localStorage.getItem("user");
-        if (storedUser) {
-            try {
-                setUser(JSON.parse(storedUser));
-            } catch (error) {
-                console.error("Error parsing stored user:", error);
-                localStorage.removeItem("user");
-                setUser(null);
-            }
+        if (user) {
+            localStorage.setItem("user", JSON.stringify(user));
         } else {
-            setUser(null);
+            localStorage.removeItem("user");
         }
-        setIsLoading(false);
-    }, []);
+    }, [user]);
 
     const isAuthenticated = user !== null;
 
-    return <AuthContext.Provider value={{ user, isAuthenticated, login, register, isLoading }}>{children}</AuthContext.Provider>;
+    return (
+        <AuthContext value={{ isAuthenticated, user, setUser }}>
+            {children}
+        </AuthContext>
+    );
 };
 
 export const useAuth = () => {
@@ -63,7 +48,7 @@ export const useAuth = () => {
     return context;
 };
 
-export default function Auth() {
+export default function AuthLayout() {
     return (
         <AuthProvider>
             <div id="auth-layout">

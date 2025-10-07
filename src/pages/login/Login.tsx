@@ -7,7 +7,7 @@ import { useAuth } from "../../layout/Auth/Auth";
 export default function Login() {
     const formRef = useRef<HTMLFormElement>(null);
     const navigate = useNavigate();
-    const { login } = useAuth();
+    const { setUser } = useAuth();
 
     const handleSubmit = (event: React.FormEvent) => {
         event.preventDefault();
@@ -15,11 +15,11 @@ export default function Login() {
         const form = formRef.current;
         if (form) {
             const formData = new FormData(form);
-            const email = formData.get("email");
+            const username = formData.get("username");
             const password = formData.get("password");
-            console.info(email, password);
+            console.info(username, password);
             // Lógica de verificación de login
-            login(email as string, password as string);
+            setUser({ username: username as string });
             navigate("/feed");
         }
     };
@@ -28,7 +28,7 @@ export default function Login() {
         <Box id="login-page" className="flex flex-col items-center gap-4 justify-center min-h-screen">
             <Typography variant="h3">Login</Typography>
             <form ref={formRef} className="flex flex-col gap-4 min-w-72" onSubmit={handleSubmit}>
-                <TextField type="email" name="email" required label="Correo electrónico" />
+                <TextField type="username" name="username" required label="Nombre de usuario" />
                 <TextField type="password" name="password" required label="Contraseña" />
                 <Button type="submit" variant="contained">
                     Iniciar sesión
