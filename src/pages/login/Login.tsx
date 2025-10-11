@@ -10,7 +10,7 @@ export default function Login() {
     const navigate = useNavigate();
     const { setUser } = useAuth();
 
-    const handleSubmit = (event: React.FormEvent) => {
+    const handleSubmit = async (event: React.FormEvent) => {
         event.preventDefault();
 
         const form = formRef.current;
@@ -18,11 +18,15 @@ export default function Login() {
             const formData = new FormData(form);
             const username = formData.get("username") as string;
             const password = formData.get("password") as string;
-            console.info(username, password);
             // Lógica de verificación de login
-            login(username, password);
-            // setUser({ username: username as string });
-            // navigate("/feed");
+            const response = await login(username, password);
+            console.info(response);
+            if (response.ok && response.user) {
+                setUser(response.user);
+                navigate("/feed");
+            } else {
+                alert(response.message || "Error en el login");
+            }
         }
     };
 
