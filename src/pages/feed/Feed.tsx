@@ -3,7 +3,7 @@ import { Navigate } from "react-router";
 
 import { useAuth } from "../../layout/Auth/Auth";
 import type { Movie } from "../../types/Movie";
-import { getMovies } from "../../services/moviesService";
+import { getMoviesAxios } from "../../services/moviesService";
 import MoviesCard from "../../components/MoviesCard";
 
 export default function Feed() {
@@ -12,7 +12,7 @@ export default function Feed() {
 
     useEffect(() => {
         const fetchMovies = async () => {
-            const response = await getMovies();
+            const response = await getMoviesAxios();
             if (response.ok && response.movies) {
                 setMovies(response.movies);
             } else {

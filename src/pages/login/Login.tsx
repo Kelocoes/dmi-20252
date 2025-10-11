@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import { useNavigate } from "react-router";
 
 import { useAuth } from "../../layout/Auth/Auth";
-import { login } from "../../services/authService";
+import { loginAxios } from "../../services/authService";
 
 export default function Login() {
     const formRef = useRef<HTMLFormElement>(null);
@@ -19,7 +19,7 @@ export default function Login() {
             const username = formData.get("username") as string;
             const password = formData.get("password") as string;
             // Lógica de verificación de login
-            const response = await login(username, password);
+            const response = await loginAxios(username, password);
             console.info(response);
             if (response.ok && response.user) {
                 setUser(response.user);
