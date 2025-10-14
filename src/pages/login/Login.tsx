@@ -3,14 +3,15 @@ import React, { useRef } from "react";
 import { useNavigate } from "react-router";
 
 import { useAuth } from "../../layout/Auth/Auth";
-import { login } from "../../services/authService";
+import { login, loginAxios } from "../../services/authService";
+import type { User } from "../../types/UserType";
 
 export default function Login() {
     const formRef = useRef<HTMLFormElement>(null);
     const navigate = useNavigate();
     const { setUser } = useAuth();
 
-    const handleSubmit = (event: React.FormEvent) => {
+    const handleSubmit = async (event: React.FormEvent) => {
         event.preventDefault();
 
         const form = formRef.current;
@@ -20,9 +21,13 @@ export default function Login() {
             const password = formData.get("password") as string;
             console.info(username, password);
             // Lógica de verificación de login
-            login(username, password);
-            // setUser({ username: username as string });
-            // navigate("/feed");
+            const data = await loginAxios(username, password);
+            if (data.ok) {
+                setUser(data.user as User);
+                navigate("/feed");
+            } else {
+                alert("Login failed: " + data.message);
+            }
         }
     };
 
