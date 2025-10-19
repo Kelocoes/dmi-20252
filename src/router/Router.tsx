@@ -4,6 +4,8 @@ import Landing from "../pages/landing/Landing";
 import AuthLayout from "../layout/Auth/Auth";
 import Login from "../pages/login/Login";
 import Feed from "../pages/feed/Feed";
+import ContextPage from "../pages/context/ContextPage";
+import UseContextPage from "../pages/useContextPage/ContextPage";
 
 const router = createBrowserRouter(
     [
@@ -17,6 +19,8 @@ const router = createBrowserRouter(
                 },
                 { path: "login", Component: Login },
                 { path: "feed", Component: Feed },
+                { path: "context", Component: ContextPage },
+                { path: "use-context", Component: UseContextPage },
                 { path: "*", Component: Landing },
             ],
         },
