@@ -6,6 +6,7 @@ import Login from "../pages/login/Login";
 import Feed from "../pages/feed/Feed";
 import ContextPage from "../pages/context/ContextPage";
 import UseContextPage from "../pages/useContextPage/ContextPage";
+import ReduxPage from "../pages/redux/ReduxPage";
 
 const router = createBrowserRouter(
     [
@@ -21,6 +22,7 @@ const router = createBrowserRouter(
                 { path: "feed", Component: Feed },
                 { path: "context", Component: ContextPage },
                 { path: "use-context", Component: UseContextPage },
+                { path: "redux", Component: ReduxPage },
                 { path: "*", Component: Landing },
             ],
         },
