@@ -20,12 +20,12 @@ const router = createBrowserRouter(
                 },
                 { path: "login", Component: Login },
                 { path: "feed", Component: Feed },
-                { path: "context", Component: ContextPage },
-                { path: "use-context", Component: UseContextPage },
-                { path: "redux", Component: ReduxPage },
                 { path: "*", Component: Landing },
             ],
         },
+        { path: "context", Component: ContextPage },
+        { path: "use-context", Component: UseContextPage },
+        { path: "redux", Component: ReduxPage },
     ],
     { basename: "/dmi" }
 );
