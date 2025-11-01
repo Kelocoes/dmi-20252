@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "name": "Catan",
+        "description": "A strategy game about resource management and trading.",
+        "min_players": 3,
+        "max_players": 4,
+        "category": "Strategy",
+        "created_by": 2
+    },
+    {
+        "id": 2,
+        "name": "Ticket to Ride",
+        "description": "A railway-themed board game.",
+        "min_players": 2,
+        "max_players": 5,
+        "category": "Family",
+        "created_by": 2
+    },
+    {
+        "id": 3,
+        "name": "Pandemic",
+        "description": "A cooperative game where players work together to stop global outbreaks.",
+        "min_players": 2,
+        "max_players": 4,
+        "category": "Cooperative",
+        "created_by": 2
+    },
+    {
+        "id": 4,
+        "name": "Carcassonne",
+        "description": "A tile-placement game where players build cities and roads.",
+        "min_players": 2,
+        "max_players": 5,
+        "category": "Strategy",
+        "created_by": 2
+    },
+    {
+        "id": 5,
+        "name": "Codenames",
+        "description": "A word game where players guess the right words based on clues.",
+        "min_players": 2,
+        "max_players": 8,
+        "category": "Party",
+        "created_by": 2
+    },
+    {
+        "id": 6,
+        "name": "Azul",
+        "description": "A tile-drafting game inspired by Portuguese tiles.",
+        "min_players": 2,
+        "max_players": 4,
+        "category": "Abstract",
+        "created_by": 3
+    },
+    {
+        "id": 7,
+        "name": "7 Wonders",
+        "description": "A card drafting game about building civilizations.",
+        "min_players": 3,
+        "max_players": 7,
+        "category": "Strategy",
+        "created_by": 3
+    },
+    {
+        "id": 8,
+        "name": "Splendor",
+        "description": "A game about collecting gems and building developments.",
+        "min_players": 2,
+        "max_players": 4,
+        "category": "Card Game",
+        "created_by": 3
+    },
+    {
+        "id": 9,
+        "name": "Dixit",
+        "description": "A storytelling game with beautifully illustrated cards.",
+        "min_players": 3,
+        "max_players": 6,
+        "category": "Party",
+        "created_by": 3
+    },
+    {
+        "id": 10,
+        "name": "King of Tokyo",
+        "description": "A dice game where players compete as monsters for dominance.",
+        "min_players": 2,
+        "max_players": 6,
+        "category": "Dice",
+        "created_by": 3
+    }
+]

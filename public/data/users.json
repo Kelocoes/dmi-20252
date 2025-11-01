@@ -1,0 +1,362 @@
+[
+    {
+        "id": 1,
+        "username": "admin",
+        "email": "admin@example.com",
+        "password_hash": "$2y$10$6o5vS5YmB6/txDbxtABg8OlTI2XTrdzGdwwsOt4EgVRsJujeef6CC",
+        "bio": "Administrator account",
+        "created_at": "2025-01-15T10:00:00Z",
+        "role_id": 1,
+        "birthdate": "1980-01-01"
+    },
+    {
+        "id": 2,
+        "username": "user1",
+        "email": "user1@example.com",
+        "password_hash": "$2y$10$6o5vS5YmB6/txDbxtABg8OlTI2XTrdzGdwwsOt4EgVRsJujeef6CC",
+        "bio": "Standard user account",
+        "created_at": "2025-01-16T11:30:00Z",
+        "role_id": 2,
+        "birthdate": "1990-02-15"
+    },
+    {
+        "id": 3,
+        "username": "user2",
+        "email": "user2@example.com",
+        "password_hash": "$2y$10$6o5vS5YmB6/txDbxtABg8OlTI2XTrdzGdwwsOt4EgVRsJujeef6CC",
+        "bio": "Standard user account",
+        "created_at": "2025-01-17T09:20:00Z",
+        "role_id": 2,
+        "birthdate": "1992-03-20"
+    },
+    {
+        "id": 4,
+        "username": "user3",
+        "email": "user3@example.com",
+        "password_hash": "$2y$10$6o5vS5YmB6/txDbxtABg8OlTI2XTrdzGdwwsOt4EgVRsJujeef6CC",
+        "bio": "Standard user account",
+        "created_at": "2025-01-18T14:15:00Z",
+        "role_id": 2,
+        "birthdate": "1985-04-10"
+    },
+    {
+        "id": 5,
+        "username": "user4",
+        "email": "user4@example.com",
+        "password_hash": "$2y$10$6o5vS5YmB6/txDbxtABg8OlTI2XTrdzGdwwsOt4EgVRsJujeef6CC",
+        "bio": "Standard user account",
+        "created_at": "2025-01-19T16:45:00Z",
+        "role_id": 2,
+        "birthdate": "1993-05-25"
+    },
+    {
+        "id": 6,
+        "username": "user5",
+        "email": "user5@example.com",
+        "password_hash": "$2y$10$6o5vS5YmB6/txDbxtABg8OlTI2XTrdzGdwwsOt4EgVRsJujeef6CC",
+        "bio": "Standard user account",
+        "created_at": "2025-01-20T08:30:00Z",
+        "role_id": 2,
+        "birthdate": "1991-06-30"
+    },
+    {
+        "id": 7,
+        "username": "user6",
+        "email": "user6@example.com",
+        "password_hash": "$2y$10$6o5vS5YmB6/txDbxtABg8OlTI2XTrdzGdwwsOt4EgVRsJujeef6CC",
+        "bio": "Standard user account",
+        "created_at": "2025-01-21T12:00:00Z",
+        "role_id": 2,
+        "birthdate": "1988-07-12"
+    },
+    {
+        "id": 8,
+        "username": "user7",
+        "email": "user7@example.com",
+        "password_hash": "$2y$10$6o5vS5YmB6/txDbxtABg8OlTI2XTrdzGdwwsOt4EgVRsJujeef6CC",
+        "bio": "Standard user account",
+        "created_at": "2025-01-22T15:20:00Z",
+        "role_id": 2,
+        "birthdate": "1994-08-18"
+    },
+    {
+        "id": 9,
+        "username": "user8",
+        "email": "user8@example.com",
+        "password_hash": "$2y$10$6o5vS5YmB6/txDbxtABg8OlTI2XTrdzGdwwsOt4EgVRsJujeef6CC",
+        "bio": "Standard user account",
+        "created_at": "2025-01-23T10:45:00Z",
+        "role_id": 2,
+        "birthdate": "1995-09-05"
+    },
+    {
+        "id": 10,
+        "username": "user9",
+        "email": "user9@example.com",
+        "password_hash": "$2y$10$6o5vS5YmB6/txDbxtABg8OlTI2XTrdzGdwwsOt4EgVRsJujeef6CC",
+        "bio": "Standard user account",
+        "created_at": "2025-01-24T13:10:00Z",
+        "role_id": 2,
+        "birthdate": "1987-10-22"
+    },
+    {
+        "id": 11,
+        "username": "user10",
+        "email": "user10@example.com",
+        "password_hash": "$2y$10$6o5vS5YmB6/txDbxtABg8OlTI2XTrdzGdwwsOt4EgVRsJujeef6CC",
+        "bio": "Standard user account",
+        "created_at": "2025-01-25T09:30:00Z",
+        "role_id": 2,
+        "birthdate": "1996-11-11"
+    },
+    {
+        "id": 12,
+        "username": "user11",
+        "email": "user11@example.com",
+        "password_hash": "$2y$10$6o5vS5YmB6/txDbxtABg8OlTI2XTrdzGdwwsOt4EgVRsJujeef6CC",
+        "bio": "Standard user account",
+        "created_at": "2025-01-26T11:15:00Z",
+        "role_id": 2,
+        "birthdate": "1990-12-01"
+    },
+    {
+        "id": 13,
+        "username": "user12",
+        "email": "user12@example.com",
+        "password_hash": "$2y$10$6o5vS5YmB6/txDbxtABg8OlTI2XTrdzGdwwsOt4EgVRsJujeef6CC",
+        "bio": "Standard user account",
+        "created_at": "2025-01-27T14:50:00Z",
+        "role_id": 2,
+        "birthdate": "1989-01-19"
+    },
+    {
+        "id": 14,
+        "username": "user13",
+        "email": "user13@example.com",
+        "password_hash": "$2y$10$6o5vS5YmB6/txDbxtABg8OlTI2XTrdzGdwwsOt4EgVRsJujeef6CC",
+        "bio": "Standard user account",
+        "created_at": "2025-01-28T08:25:00Z",
+        "role_id": 2,
+        "birthdate": "1992-02-28"
+    },
+    {
+        "id": 15,
+        "username": "user14",
+        "email": "user14@example.com",
+        "password_hash": "$2y$10$6o5vS5YmB6/txDbxtABg8OlTI2XTrdzGdwwsOt4EgVRsJujeef6CC",
+        "bio": "Standard user account",
+        "created_at": "2025-01-29T10:05:00Z",
+        "role_id": 2,
+        "birthdate": "1993-03-15"
+    },
+    {
+        "id": 16,
+        "username": "user15",
+        "email": "user15@example.com",
+        "password_hash": "$2y$10$6o5vS5YmB6/txDbxtABg8OlTI2XTrdzGdwwsOt4EgVRsJujeef6CC",
+        "bio": "Standard user account",
+        "created_at": "2025-01-30T12:40:00Z",
+        "role_id": 2,
+        "birthdate": "1994-04-25"
+    },
+    {
+        "id": 17,
+        "username": "user16",
+        "email": "user16@example.com",
+        "password_hash": "$2y$10$6o5vS5YmB6/txDbxtABg8OlTI2XTrdzGdwwsOt4EgVRsJujeef6CC",
+        "bio": "Standard user account",
+        "created_at": "2025-01-31T15:20:00Z",
+        "role_id": 2,
+        "birthdate": "1991-05-10"
+    },
+    {
+        "id": 18,
+        "username": "user17",
+        "email": "user17@example.com",
+        "password_hash": "$2y$10$6o5vS5YmB6/txDbxtABg8OlTI2XTrdzGdwwsOt4EgVRsJujeef6CC",
+        "bio": "Standard user account",
+        "created_at": "2025-02-01T09:55:00Z",
+        "role_id": 2,
+        "birthdate": "1986-06-20"
+    },
+    {
+        "id": 19,
+        "username": "user18",
+        "email": "user18@example.com",
+        "password_hash": "$2y$10$6o5vS5YmB6/txDbxtABg8OlTI2XTrdzGdwwsOt4EgVRsJujeef6CC",
+        "bio": "Standard user account",
+        "created_at": "2025-02-02T11:30:00Z",
+        "role_id": 2,
+        "birthdate": "1995-07-30"
+    },
+    {
+        "id": 20,
+        "username": "user19",
+        "email": "user19@example.com",
+        "password_hash": "$2y$10$6o5vS5YmB6/txDbxtABg8OlTI2XTrdzGdwwsOt4EgVRsJujeef6CC",
+        "bio": "Standard user account",
+        "created_at": "2025-02-03T14:15:00Z",
+        "role_id": 2,
+        "birthdate": "1997-08-14"
+    },
+    {
+        "id": 21,
+        "username": "user20",
+        "email": "user20@example.com",
+        "password_hash": "$2y$10$6o5vS5YmB6/txDbxtABg8OlTI2XTrdzGdwwsOt4EgVRsJujeef6CC",
+        "bio": "Standard user account",
+        "created_at": "2025-02-04T08:45:00Z",
+        "role_id": 2,
+        "birthdate": "1990-09-09"
+    },
+    {
+        "id": 22,
+        "username": "user21",
+        "email": "user21@example.com",
+        "password_hash": "$2y$10$6o5vS5YmB6/txDbxtABg8OlTI2XTrdzGdwwsOt4EgVRsJujeef6CC",
+        "bio": "Standard user account",
+        "created_at": "2025-02-05T10:20:00Z",
+        "role_id": 2,
+        "birthdate": "1988-10-03"
+    },
+    {
+        "id": 23,
+        "username": "user22",
+        "email": "user22@example.com",
+        "password_hash": "$2y$10$6o5vS5YmB6/txDbxtABg8OlTI2XTrdzGdwwsOt4EgVRsJujeef6CC",
+        "bio": "Standard user account",
+        "created_at": "2025-02-06T13:00:00Z",
+        "role_id": 2,
+        "birthdate": "1996-11-21"
+    },
+    {
+        "id": 24,
+        "username": "user23",
+        "email": "user23@example.com",
+        "password_hash": "$2y$10$6o5vS5YmB6/txDbxtABg8OlTI2XTrdzGdwwsOt4EgVRsJujeef6CC",
+        "bio": "Standard user account",
+        "created_at": "2025-02-07T15:35:00Z",
+        "role_id": 2,
+        "birthdate": "1993-12-12"
+    },
+    {
+        "id": 25,
+        "username": "user24",
+        "email": "user24@example.com",
+        "password_hash": "$2y$10$6o5vS5YmB6/txDbxtABg8OlTI2XTrdzGdwwsOt4EgVRsJujeef6CC",
+        "bio": "Standard user account",
+        "created_at": "2025-02-08T09:10:00Z",
+        "role_id": 2,
+        "birthdate": "1991-01-07"
+    },
+    {
+        "id": 26,
+        "username": "user25",
+        "email": "user25@example.com",
+        "password_hash": "$2y$10$6o5vS5YmB6/txDbxtABg8OlTI2XTrdzGdwwsOt4EgVRsJujeef6CC",
+        "bio": "Standard user account",
+        "created_at": "2025-02-09T11:50:00Z",
+        "role_id": 2,
+        "birthdate": "1994-02-18"
+    },
+    {
+        "id": 27,
+        "username": "user26",
+        "email": "user26@example.com",
+        "password_hash": "$2y$10$6o5vS5YmB6/txDbxtABg8OlTI2XTrdzGdwwsOt4EgVRsJujeef6CC",
+        "bio": "Standard user account",
+        "created_at": "2025-02-10T14:25:00Z",
+        "role_id": 2,
+        "birthdate": "1992-03-29"
+    },
+    {
+        "id": 28,
+        "username": "user27",
+        "email": "user27@example.com",
+        "password_hash": "$2y$10$6o5vS5YmB6/txDbxtABg8OlTI2XTrdzGdwwsOt4EgVRsJujeef6CC",
+        "bio": "Standard user account",
+        "created_at": "2025-02-11T08:05:00Z",
+        "role_id": 2,
+        "birthdate": "1989-04-16"
+    },
+    {
+        "id": 29,
+        "username": "user28",
+        "email": "user28@example.com",
+        "password_hash": "$2y$10$6o5vS5YmB6/txDbxtABg8OlTI2XTrdzGdwwsOt4EgVRsJujeef6CC",
+        "bio": "Standard user account",
+        "created_at": "2025-02-12T10:40:00Z",
+        "role_id": 2,
+        "birthdate": "1995-05-27"
+    },
+    {
+        "id": 30,
+        "username": "user29",
+        "email": "user29@example.com",
+        "password_hash": "$2y$10$6o5vS5YmB6/txDbxtABg8OlTI2XTrdzGdwwsOt4EgVRsJujeef6CC",
+        "bio": "Standard user account",
+        "created_at": "2025-02-13T13:15:00Z",
+        "role_id": 2,
+        "birthdate": "1990-06-08"
+    },
+    {
+        "id": 31,
+        "username": "user30",
+        "email": "user30@example.com",
+        "password_hash": "$2y$10$6o5vS5YmB6/txDbxtABg8OlTI2XTrdzGdwwsOt4EgVRsJujeef6CC",
+        "bio": "Standard user account",
+        "created_at": "2025-02-14T15:50:00Z",
+        "role_id": 2,
+        "birthdate": "1997-07-19"
+    },
+    {
+        "id": 32,
+        "username": "user31",
+        "email": "user31@example.com",
+        "password_hash": "$2y$10$6o5vS5YmB6/txDbxtABg8OlTI2XTrdzGdwwsOt4EgVRsJujeef6CC",
+        "bio": "Standard user account",
+        "created_at": "2025-02-15T09:25:00Z",
+        "role_id": 2,
+        "birthdate": "1993-08-25"
+    },
+    {
+        "id": 33,
+        "username": "user32",
+        "email": "user32@example.com",
+        "password_hash": "$2y$10$6o5vS5YmB6/txDbxtABg8OlTI2XTrdzGdwwsOt4EgVRsJujeef6CC",
+        "bio": "Standard user account",
+        "created_at": "2025-02-16T12:00:00Z",
+        "role_id": 2,
+        "birthdate": "1991-09-14"
+    },
+    {
+        "id": 34,
+        "username": "user33",
+        "email": "user33@example.com",
+        "password_hash": "$2y$10$6o5vS5YmB6/txDbxtABg8OlTI2XTrdzGdwwsOt4EgVRsJujeef6CC",
+        "bio": "Standard user account",
+        "created_at": "2025-02-17T14:35:00Z",
+        "role_id": 2,
+        "birthdate": "1994-10-30"
+    },
+    {
+        "id": 35,
+        "username": "user34",
+        "email": "user34@example.com",
+        "password_hash": "$2y$10$6o5vS5YmB6/txDbxtABg8OlTI2XTrdzGdwwsOt4EgVRsJujeef6CC",
+        "bio": "Standard user account",
+        "created_at": "2025-02-18T08:10:00Z",
+        "role_id": 2,
+        "birthdate": "1992-11-22"
+    },
+    {
+        "id": 36,
+        "username": "user35",
+        "email": "user35@example.com",
+        "password_hash": "$2y$10$6o5vS5YmB6/txDbxtABg8OlTI2XTrdzGdwwsOt4EgVRsJujeef6CC",
+        "bio": "Standard user account",
+        "created_at": "2025-02-19T10:45:00Z",
+        "role_id": 2,
+        "birthdate": "1988-12-05"
+    }
+]

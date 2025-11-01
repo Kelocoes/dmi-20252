@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "location": "Room 101",
+        "date_time": "2025-10-15T18:00:00Z",
+        "status": "Completed",
+        "notes": "Great session!",
+        "game_id": 1,
+        "host_id": 2
+    },
+    {
+        "id": 2,
+        "location": "Room 202",
+        "date_time": "2025-11-05T19:30:00Z",
+        "status": "Scheduled",
+        "notes": "Upcoming session",
+        "game_id": 2,
+        "host_id": 3
+    },
+    {
+        "id": 3,
+        "location": "Room 303",
+        "date_time": "2025-10-20T17:00:00Z",
+        "status": "Cancelled",
+        "notes": "Host unavailable",
+        "game_id": 3,
+        "host_id": 4
+    }
+]
