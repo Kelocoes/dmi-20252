@@ -6,7 +6,20 @@
         "min_players": 3,
         "max_players": 4,
         "category": "Strategy",
-        "created_by": 2
+        "created_by": {
+            "id": 2,
+            "username": "user1",
+            "email": "user1@example.com",
+            "password": "password",
+            "bio": "Standard user account",
+            "created_at": "2025-01-16T11:30:00Z",
+            "role": {
+                "id": 2,
+                "name": "User",
+                "description": "Standard user role with limited access"
+            },
+            "birthdate": "1990-02-15"
+        }
     },
     {
         "id": 2,
@@ -15,7 +28,20 @@
         "min_players": 2,
         "max_players": 5,
         "category": "Family",
-        "created_by": 2
+        "created_by": {
+            "id": 2,
+            "username": "user1",
+            "email": "user1@example.com",
+            "password": "password",
+            "bio": "Standard user account",
+            "created_at": "2025-01-16T11:30:00Z",
+            "role": {
+                "id": 2,
+                "name": "User",
+                "description": "Standard user role with limited access"
+            },
+            "birthdate": "1990-02-15"
+        }
     },
     {
         "id": 3,
@@ -24,7 +50,20 @@
         "min_players": 2,
         "max_players": 4,
         "category": "Cooperative",
-        "created_by": 2
+        "created_by": {
+            "id": 2,
+            "username": "user1",
+            "email": "user1@example.com",
+            "password": "password",
+            "bio": "Standard user account",
+            "created_at": "2025-01-16T11:30:00Z",
+            "role": {
+                "id": 2,
+                "name": "User",
+                "description": "Standard user role with limited access"
+            },
+            "birthdate": "1990-02-15"
+        }
     },
     {
         "id": 4,
@@ -33,7 +72,20 @@
         "min_players": 2,
         "max_players": 5,
         "category": "Strategy",
-        "created_by": 2
+        "created_by": {
+            "id": 2,
+            "username": "user1",
+            "email": "user1@example.com",
+            "password": "password",
+            "bio": "Standard user account",
+            "created_at": "2025-01-16T11:30:00Z",
+            "role": {
+                "id": 2,
+                "name": "User",
+                "description": "Standard user role with limited access"
+            },
+            "birthdate": "1990-02-15"
+        }
     },
     {
         "id": 5,
@@ -42,7 +94,20 @@
         "min_players": 2,
         "max_players": 8,
         "category": "Party",
-        "created_by": 2
+        "created_by": {
+            "id": 2,
+            "username": "user1",
+            "email": "user1@example.com",
+            "password": "password",
+            "bio": "Standard user account",
+            "created_at": "2025-01-16T11:30:00Z",
+            "role": {
+                "id": 2,
+                "name": "User",
+                "description": "Standard user role with limited access"
+            },
+            "birthdate": "1990-02-15"
+        }
     },
     {
         "id": 6,
@@ -51,7 +116,20 @@
         "min_players": 2,
         "max_players": 4,
         "category": "Abstract",
-        "created_by": 3
+        "created_by": {
+            "id": 3,
+            "username": "user2",
+            "email": "user2@example.com",
+            "password": "password",
+            "bio": "Standard user account",
+            "created_at": "2025-01-17T09:20:00Z",
+            "role": {
+                "id": 2,
+                "name": "User",
+                "description": "Standard user role with limited access"
+            },
+            "birthdate": "1992-03-20"
+        }
     },
     {
         "id": 7,
@@ -60,7 +138,20 @@
         "min_players": 3,
         "max_players": 7,
         "category": "Strategy",
-        "created_by": 3
+        "created_by": {
+            "id": 3,
+            "username": "user2",
+            "email": "user2@example.com",
+            "password": "password",
+            "bio": "Standard user account",
+            "created_at": "2025-01-17T09:20:00Z",
+            "role": {
+                "id": 2,
+                "name": "User",
+                "description": "Standard user role with limited access"
+            },
+            "birthdate": "1992-03-20"
+        }
     },
     {
         "id": 8,
@@ -69,7 +160,20 @@
         "min_players": 2,
         "max_players": 4,
         "category": "Card Game",
-        "created_by": 3
+        "created_by": {
+            "id": 3,
+            "username": "user2",
+            "email": "user2@example.com",
+            "password": "password",
+            "bio": "Standard user account",
+            "created_at": "2025-01-17T09:20:00Z",
+            "role": {
+                "id": 2,
+                "name": "User",
+                "description": "Standard user role with limited access"
+            },
+            "birthdate": "1992-03-20"
+        }
     },
     {
         "id": 9,
@@ -78,7 +182,20 @@
         "min_players": 3,
         "max_players": 6,
         "category": "Party",
-        "created_by": 3
+        "created_by": {
+            "id": 3,
+            "username": "user2",
+            "email": "user2@example.com",
+            "password": "password",
+            "bio": "Standard user account",
+            "created_at": "2025-01-17T09:20:00Z",
+            "role": {
+                "id": 2,
+                "name": "User",
+                "description": "Standard user role with limited access"
+            },
+            "birthdate": "1992-03-20"
+        }
     },
     {
         "id": 10,
@@ -87,6 +204,19 @@
         "min_players": 2,
         "max_players": 6,
         "category": "Dice",
-        "created_by": 3
+        "created_by": {
+            "id": 3,
+            "username": "user2",
+            "email": "user2@example.com",
+            "password": "password",
+            "bio": "Standard user account",
+            "created_at": "2025-01-17T09:20:00Z",
+            "role": {
+                "id": 2,
+                "name": "User",
+                "description": "Standard user role with limited access"
+            },
+            "birthdate": "1992-03-20"
+        }
     }
 ]
