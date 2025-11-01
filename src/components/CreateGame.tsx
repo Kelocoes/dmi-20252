@@ -1,5 +1,7 @@
 import { useRef, useState, type FormEvent, type ChangeEvent } from "react";
 
+import { bucketService } from "../services";
+
 interface CreateGameProps {
     onClose: () => void;
 }
@@ -23,7 +25,7 @@ export default function CreateGame({ onClose }: CreateGameProps) {
         }
     };
 
-    const handleSubmit = (e: FormEvent) => {
+    const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
         const formData = new FormData(formRef.current!);
         const imageFile = formData.get("image") as File;
@@ -37,7 +39,15 @@ export default function CreateGame({ onClose }: CreateGameProps) {
             image: imageFile && imageFile.size > 0 ? imageFile : null,
         };
         console.info("Game Data:", dataObj);
-        // TODO: Llamar al servicio para crear el juego
+
+        if (imageFile && imageFile.size > 0) {
+            const uploadResult = await bucketService.uploadImage(imageFile, "games");
+            if (uploadResult.success) {
+                console.info("Image uploaded successfully:", uploadResult.url);
+            } else {
+                console.error("Image upload failed:", uploadResult.error);
+            }
+        }
         onClose();
     };
 
@@ -81,8 +91,8 @@ export default function CreateGame({ onClose }: CreateGameProps) {
                     <label className="label">
                         <span className="label-text">Categoría</span>
                     </label>
-                    <select name="category" className="select select-bordered w-full" required>
-                        <option value="" disabled selected>
+                    <select name="category" className="select select-bordered w-full" defaultValue="" required>
+                        <option value="" disabled>
                             Selecciona una categoría
                         </option>
                         {categories.map((category) => (
