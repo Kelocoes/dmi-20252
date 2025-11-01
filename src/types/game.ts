@@ -7,5 +7,6 @@ export interface Game {
     min_players: number;
     max_players: number;
     category: string;
+    imageUrl?: string;
     created_by: User;
 }

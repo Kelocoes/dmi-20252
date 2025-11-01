@@ -7,6 +7,11 @@ interface GameCardProps {
 export default function GameCard({ game }: GameCardProps) {
     return (
         <div className="card bg-base-100 shadow-xl">
+            {game.imageUrl && (
+                <figure>
+                    <img src={game.imageUrl} alt={game.name} className="w-full h-64 object-cover" />
+                </figure>
+            )}
             <div className="card-body">
                 <h2 className="card-title">{game.name}</h2>
                 <p>{game.description}</p>

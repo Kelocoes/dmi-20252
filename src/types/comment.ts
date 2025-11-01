@@ -12,5 +12,6 @@ export interface Comment {
         min_players: number;
         max_players: number;
         category: string;
+        imageUrl?: string;
     };
 }

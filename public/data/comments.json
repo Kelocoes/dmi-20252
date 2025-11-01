@@ -77,7 +77,8 @@
             "description": "A cooperative game where players work together to stop global outbreaks.",
             "min_players": 2,
             "max_players": 4,
-            "category": "Cooperative"
+            "category": "Cooperative",
+            "imageUrl": "https://cf.geekdo-images.com/S3ybV1LAp-8SnHIXLLjVqA__itemrep@2x/img/qnS9n-lo85ht2reXk7MsdbgeQfM=/fit-in/492x600/filters:strip_icc()/pic1534148.jpg"
         }
     },
     {
@@ -104,7 +105,8 @@
             "description": "A strategy game about resource management and trading.",
             "min_players": 3,
             "max_players": 4,
-            "category": "Strategy"
+            "category": "Strategy",
+            "imageUrl": "https://cf.geekdo-images.com/0XODRpReiZBFUffEcqT5-Q__itemrep@2x/img/81lS9PRn2JwyE4br1l7Z5fgSyFo=/fit-in/492x600/filters:strip_icc()/pic9156909.png"
         }
     },
     {
@@ -131,7 +133,8 @@
             "description": "A railway-themed board game.",
             "min_players": 2,
             "max_players": 5,
-            "category": "Family"
+            "category": "Family",
+            "imageUrl": "https://cf.geekdo-images.com/kdWYkW-7AqG63HhqPL6ekA__itemrep@2x/img/nAI08lHzxwXX2mVrNcBms4FEO_o=/fit-in/492x600/filters:strip_icc()/pic8937637.jpg"
         }
     }
 ]

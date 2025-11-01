@@ -1,4 +1,4 @@
-import { useRef, type FormEvent } from "react";
+import { useRef, useState, type FormEvent, type ChangeEvent } from "react";
 
 interface CreateGameProps {
     onClose: () => void;
@@ -6,18 +6,35 @@ interface CreateGameProps {
 
 export default function CreateGame({ onClose }: CreateGameProps) {
     const formRef = useRef<HTMLFormElement>(null);
+    const [imagePreview, setImagePreview] = useState<string | null>(null);
 
     const categories = ["Strategy", "Family", "Cooperative", "Party", "Abstract", "Card Game"];
+
+    const handleImageChange = (e: ChangeEvent<HTMLInputElement>) => {
+        const file = e.target.files?.[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onloadend = () => {
+                setImagePreview(reader.result as string);
+            };
+            reader.readAsDataURL(file);
+        } else {
+            setImagePreview(null);
+        }
+    };
 
     const handleSubmit = (e: FormEvent) => {
         e.preventDefault();
         const formData = new FormData(formRef.current!);
+        const imageFile = formData.get("image") as File;
+
         const dataObj = {
             name: formData.get("name"),
             description: formData.get("description"),
             min_players: Number(formData.get("min_players")),
             max_players: Number(formData.get("max_players")),
             category: formData.get("category"),
+            image: imageFile && imageFile.size > 0 ? imageFile : null,
         };
         console.info("Game Data:", dataObj);
         // TODO: Llamar al servicio para crear el juego
@@ -74,6 +91,22 @@ export default function CreateGame({ onClose }: CreateGameProps) {
                             </option>
                         ))}
                     </select>
+                </div>
+
+                <div className="form-control mb-6">
+                    <label className="label">
+                        <span className="label-text">Imagen del juego</span>
+                    </label>
+                    <input type="file" name="image" accept="image/*" className="file-input file-input-bordered w-full" onChange={handleImageChange} />
+                    <label className="label">
+                        <span className="label-text-alt">Opcional: Sube una imagen del juego (JPG, PNG, etc.)</span>
+                    </label>
+                    {imagePreview && (
+                        <div className="mt-4">
+                            <p className="text-sm font-semibold mb-2">Previsualización:</p>
+                            <img src={imagePreview} alt="Preview" className="w-32 h-32 object-cover rounded-lg border-2 border-base-300" />
+                        </div>
+                    )}
                 </div>
 
                 <div className="modal-action">
