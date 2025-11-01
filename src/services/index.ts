@@ -1,0 +1,8 @@
+export { default as userService } from "./userService";
+export { default as roleService } from "./roleService";
+export { default as permissionService } from "./permissionService";
+export { default as rolePermissionService } from "./rolePermissionService";
+export { default as gameService } from "./gameService";
+export { default as sessionService } from "./sessionService";
+export { default as participantService } from "./participantService";
+export { default as commentService } from "./commentService";

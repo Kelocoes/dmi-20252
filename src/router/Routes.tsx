@@ -7,7 +7,6 @@ import SignIn from "../pages/SignIn";
 import Register from "../pages/Register";
 import Feed from "../pages/Feed";
 import Profile from "../pages/Profile";
-import Settings from "../pages/Settings";
 
 const router = createBrowserRouter(
     [
@@ -32,7 +31,6 @@ const router = createBrowserRouter(
                     Component: Feed,
                 },
                 { path: "profile", Component: Profile },
-                { path: "settings", Component: Settings },
             ],
         },
         { path: "*", element: <Navigate to="/" replace /> },
