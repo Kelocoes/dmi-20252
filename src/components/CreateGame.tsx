@@ -1,6 +1,7 @@
 import { useRef, useState, type FormEvent, type ChangeEvent } from "react";
 
 import { bucketService } from "../services";
+import gameService from "../services/supabase/gameService";
 
 interface CreateGameProps {
     onClose: () => void;
@@ -44,11 +45,21 @@ export default function CreateGame({ onClose }: CreateGameProps) {
             const uploadResult = await bucketService.uploadImage(imageFile, "games");
             if (uploadResult.success) {
                 console.info("Image uploaded successfully:", uploadResult.url);
+                const result = await gameService.create({
+                    name: dataObj.name as string,
+                    description: dataObj.description as string,
+                    min_players: dataObj.min_players,
+                    max_players: dataObj.max_players,
+                    category: dataObj.category as string,
+                    image_url: uploadResult.url,
+                    user_id: 1,
+                });
+                console.info("Game created successfully:", result);
+                onClose();
             } else {
                 console.error("Image upload failed:", uploadResult.error);
             }
         }
-        onClose();
     };
 
     return (

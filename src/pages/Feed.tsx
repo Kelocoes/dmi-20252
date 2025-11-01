@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import GameCard from "../components/GameCard";
-import gameService from "../services/gameService";
+import gameService from "../services/supabase/gameService";
 import type { Game } from "../types/game";
 import FloatingActionButton from "../components/FloatingActionButton";
 import CreateGame from "../components/CreateGame";
