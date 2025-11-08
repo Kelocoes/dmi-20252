@@ -1,9 +1,11 @@
 # CPF 😨: Polloc's Board
 
 ### 📝 Descripción del proyecto
+
 Tu tarea es desarrollar el nuevo juego en línea llamado **"Polloc's Board"**, una aplicación web colaborativa donde todos los usuarios comparten un mismo espacio de dibujo interactivo.
 
 ### 🎯 Objetivo de la aplicación
+
 La aplicación debe permitir que múltiples usuarios participen simultáneamente en la creación de un "lienzo virtual", compuesto por una cuadrícula de celdas. Cada usuario podrá reclamar celdas individuales para pintarlas con su color y letra personalizada, contribuyendo al diseño colectivo.
 
 ### 🧩 Requisitos funcionales
