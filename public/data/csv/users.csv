@@ -1,0 +1,10 @@
+id,username,email,bio,created_at,role_id,birthdate
+1,admin,admin@example.com,Administrator account,2025-01-15T10:00:00Z,1,1980-01-01
+2,user1,user1@example.com,Standard user account,2025-01-16T11:30:00Z,2,1990-02-15
+3,user2,user2@example.com,Standard user account,2025-01-17T09:20:00Z,2,1992-03-20
+4,user3,user3@example.com,Standard user account,2025-01-18T14:15:00Z,2,1985-04-10
+5,user4,user4@example.com,Standard user account,2025-01-19T16:45:00Z,2,1993-05-25
+6,user5,user5@example.com,Standard user account,2025-01-20T08:30:00Z,2,1991-06-30
+7,user6,user6@example.com,Standard user account,2025-01-21T12:00:00Z,2,1988-07-12
+8,user7,user7@example.com,Standard user account,2025-01-22T15:20:00Z,2,1994-08-18
+9,user8,user8@example.com,Standard user account,2025-01-23T10:45:00Z,2,1995-09-05
