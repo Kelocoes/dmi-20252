@@ -1,2 +1,0 @@
-Quiero que conviertas los json a csv y poner su info en cada archivo respectivo csv,
-pero como hay relaciones quiero que donde esté la dependencia pongas es el id como si fuera una bd relacional
