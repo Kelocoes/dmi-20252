@@ -1,10 +1,12 @@
 import { useRef, type FormEvent } from "react";
 import { Link } from "react-router";
 
+import authService from "../services/supabase/authService";
+
 export default function Register() {
     const formRef = useRef<HTMLFormElement>(null);
 
-    const handleSubmit = (e: FormEvent) => {
+    const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
         const formData = new FormData(formRef.current!);
         const dataObj = {
@@ -15,6 +17,20 @@ export default function Register() {
             bio: formData.get("bio"),
         };
         console.info("Form Data:", dataObj);
+        const result = await authService.signUp(dataObj.email as string, dataObj.password as string, {
+            username: dataObj.username as string,
+            birthdate: dataObj.birthdate as string,
+            bio: dataObj.bio as string,
+        });
+
+        if (result.success) {
+            console.info("User registered successfully:", result);
+            // Aquí podrías redirigir al usuario, mostrar un mensaje de éxito y
+            // también guardar la información adicional en tu base de datos si es necesario
+        } else {
+            console.error("Registration failed:", result);
+            // Aquí podrías mostrar un mensaje de error al usuario
+        }
     };
 
     return (

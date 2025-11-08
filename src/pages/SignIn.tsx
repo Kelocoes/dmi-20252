@@ -1,6 +1,8 @@
 import { useRef, type FormEvent } from "react";
 import { Link } from "react-router";
 
+import authService from "../services/supabase/authService";
+
 export default function SignIn() {
     const formRef = useRef<HTMLFormElement>(null);
 
@@ -11,6 +13,15 @@ export default function SignIn() {
         const password = formData.get("password");
         console.info("Email:", email);
         console.info("Password:", password);
+        authService.signIn(email as string, password as string).then((result) => {
+            if (result.success) {
+                console.info("User signed in successfully:", result);
+                // Aquí puedes redirigir al usuario o actualizar el estado de la aplicación
+            } else {
+                console.error("Sign-in failed:", result.error);
+                // Aquí puedes mostrar un mensaje de error al usuario
+            }
+        });
     };
 
     return (
@@ -36,9 +47,9 @@ export default function SignIn() {
                                 <input type="password" placeholder="••••••••" className="input input-bordered w-full pr-12" name="password" required />
                             </div>
                             <label className="label">
-                                <a href="#" className="label-text-alt link link-hover">
+                                <Link to="/forgot-password" className="label-text-alt link link-hover">
                                     ¿Olvidaste tu contraseña?
-                                </a>
+                                </Link>
                             </label>
                         </div>
                         <div className="form-control mt-6">

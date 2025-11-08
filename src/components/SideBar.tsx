@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router";
 
+import authService from "../services/supabase/authService";
+
 interface SideBarProps {
     children: React.ReactNode;
 }
@@ -13,6 +15,15 @@ const SideBar: React.FC<SideBarProps> = ({ children }) => {
 
     const handleLogout = () => {
         console.info("Logout clicked");
+        authService.signOut().then((result) => {
+            if (result.success) {
+                console.info("User signed out successfully");
+                // Aquí puedes redirigir al usuario o actualizar el estado de la aplicación
+            } else {
+                console.error("Sign-out failed:", result.error);
+                // Aquí puedes mostrar un mensaje de error al usuario
+            }
+        });
     };
 
     return (
