@@ -3,7 +3,7 @@ export default function Cell({ color, onClick, size = 25, letter }: { color: str
         <div
             style={{ backgroundColor: color, width: size, height: size }}
             onClick={onClick}
-            className="cursor-pointer hover:opacity-80"
+            className=""
         >
             {letter}
         </div>

@@ -15,25 +15,6 @@ export default function Login() {
         const password = formData.get("password");
         console.info("Email:", email);
         console.info("Password:", password);
-
-        try {
-            const result = await authService.signIn(email as string, password as string);
-
-            if (result.success) {
-                console.info("User signed in successfully:", result);
-                localStorage.setItem("user", JSON.stringify(result.data));
-                const userData = await userService.getUserByEmail(email as string);
-                if (userData) {
-                    localStorage.setItem("userInfo", JSON.stringify(userData));
-                    navigate("/canvas");
-                }
-            } else {
-                console.error("Sign-in failed:", result.error);
-                // Aquí puedes mostrar un mensaje de error al usuario
-            }
-        } catch (error) {
-            console.error("Sign-in failed:", error);
-        }
     };
 
     return (

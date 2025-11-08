@@ -18,23 +18,6 @@ export default function Register() {
             color: formData.get("color") as string,
         };
         console.info("Form Data:", dataObj);
-
-        try {
-            const result = await authService.signUp(
-                dataObj.email as string,
-                dataObj.password as string,
-                dataObj
-            );
-
-            if (result.success) {
-                console.info("User registered successfully:", result);
-                navigate("/sign-in");
-            } else {
-                console.error("Registration failed:", result.error);
-            }
-        } catch (error) {
-            console.error("Registration failed:", error);
-        }
     };
 
     return (
