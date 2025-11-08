@@ -4,11 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-    base: "/dmi",
     plugins: [react(), tailwindcss()],
-    build: {
-        outDir: "dist/dmi",
-    },
     server: {
         port: 3000,
     },

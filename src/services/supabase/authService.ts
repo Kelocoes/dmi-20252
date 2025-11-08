@@ -126,7 +126,7 @@ const authService = {
     forgotPassword: async (email: string) => {
         try {
             const { data, error } = await supabase.auth.resetPasswordForEmail(email, {
-                redirectTo: window.location.origin + "/dmi" +"/update-password",
+                redirectTo: window.location.origin +"/update-password",
             });
 
             if (error) {
