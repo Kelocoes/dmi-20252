@@ -36,9 +36,9 @@ export default function SignIn() {
                                 <input type="password" placeholder="••••••••" className="input input-bordered w-full pr-12" name="password" required />
                             </div>
                             <label className="label">
-                                <a href="#" className="label-text-alt link link-hover">
+                                <Link to="/forgot-password" className="label-text-alt link link-hover">
                                     ¿Olvidaste tu contraseña?
-                                </a>
+                                </Link>
                             </label>
                         </div>
                         <div className="form-control mt-6">
