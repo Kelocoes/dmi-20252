@@ -8,6 +8,7 @@ const authService = {
                 password,
                 options: {
                     data: metadata, // Información adicional del usuario si desean agregarla
+                    emailRedirectTo: "https://demo-curso.onrender.com/",
                 },
             });
 
@@ -126,7 +127,7 @@ const authService = {
     forgotPassword: async (email: string) => {
         try {
             const { data, error } = await supabase.auth.resetPasswordForEmail(email, {
-                redirectTo: window.location.origin +"/update-password",
+                redirectTo: window.location.origin + "/update-password",
             });
 
             if (error) {
