@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 
 import GameCard from "../components/GameCard";
-import gameService from "../services/gameService";
 import type { Game } from "../types/game";
 import FloatingActionButton from "../components/FloatingActionButton";
 import CreateGame from "../components/CreateGame";
+import gameService from "../services/supabase/gamesService";
 
 export default function Feed() {
     const [games, setGames] = useState<Game[]>([]);

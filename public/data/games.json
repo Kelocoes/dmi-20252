@@ -6,6 +6,7 @@
         "min_players": 3,
         "max_players": 4,
         "category": "Strategy",
+        "imageUrl": "https://cf.geekdo-images.com/0XODRpReiZBFUffEcqT5-Q__itemrep@2x/img/81lS9PRn2JwyE4br1l7Z5fgSyFo=/fit-in/492x600/filters:strip_icc()/pic9156909.png",
         "created_by": {
             "id": 2,
             "username": "user1",
@@ -28,6 +29,7 @@
         "min_players": 2,
         "max_players": 5,
         "category": "Family",
+        "imageUrl": "https://cf.geekdo-images.com/kdWYkW-7AqG63HhqPL6ekA__itemrep@2x/img/nAI08lHzxwXX2mVrNcBms4FEO_o=/fit-in/492x600/filters:strip_icc()/pic8937637.jpg",
         "created_by": {
             "id": 2,
             "username": "user1",
@@ -50,6 +52,7 @@
         "min_players": 2,
         "max_players": 4,
         "category": "Cooperative",
+        "imageUrl": "https://cf.geekdo-images.com/S3ybV1LAp-8SnHIXLLjVqA__itemrep@2x/img/qnS9n-lo85ht2reXk7MsdbgeQfM=/fit-in/492x600/filters:strip_icc()/pic1534148.jpg",
         "created_by": {
             "id": 2,
             "username": "user1",
@@ -72,6 +75,7 @@
         "min_players": 2,
         "max_players": 5,
         "category": "Strategy",
+        "imageUrl": "https://cf.geekdo-images.com/peUgu3A20LRmAXAMyDQfpQ__itemrep@2x/img/5X0usMdIui2cFTdbDSTBfCqNZr8=/fit-in/492x600/filters:strip_icc()/pic8621446.jpg",
         "created_by": {
             "id": 2,
             "username": "user1",
@@ -94,6 +98,7 @@
         "min_players": 2,
         "max_players": 8,
         "category": "Party",
+        "imageUrl": "https://cf.geekdo-images.com/nC6ifPCDnAItwoKSKXVrnw__itemrep@2x/img/aunQPNKfQbrb3ok4ayEhC4osqkc=/fit-in/492x600/filters:strip_icc()/pic8907965.jpg",
         "created_by": {
             "id": 2,
             "username": "user1",
@@ -116,6 +121,7 @@
         "min_players": 2,
         "max_players": 4,
         "category": "Abstract",
+        "imageUrl": "https://cf.geekdo-images.com/aPSHJO0d0XOpQR5X-wJonw__itemrep@2x/img/PH6uta5QGxUHg7aZ609yifJQrhY=/fit-in/492x600/filters:strip_icc()/pic6973671.png",
         "created_by": {
             "id": 3,
             "username": "user2",
@@ -138,6 +144,7 @@
         "min_players": 3,
         "max_players": 7,
         "category": "Strategy",
+        "imageUrl": "https://cf.geekdo-images.com/35h9Za_JvMMMtx_92kT0Jg__itemrep@2x/img/C1Q2lgN2URAqsAtanK5XI72phN8=/fit-in/492x600/filters:strip_icc()/pic7149798.jpg",
         "created_by": {
             "id": 3,
             "username": "user2",
@@ -160,6 +167,7 @@
         "min_players": 2,
         "max_players": 4,
         "category": "Card Game",
+        "imageUrl": "https://cf.geekdo-images.com/vNFe4JkhKAERzi4T0Ntwpw__itemrep@2x/img/qDjpnPQ6u7oROPU9dS3c_opVIFc=/fit-in/492x600/filters:strip_icc()/pic8234167.png",
         "created_by": {
             "id": 3,
             "username": "user2",
@@ -182,6 +190,7 @@
         "min_players": 3,
         "max_players": 6,
         "category": "Party",
+        "imageUrl": "https://cf.geekdo-images.com/J0PlHArkZDJ57H-brXW2Fw__itemrep@2x/img/KLwExlTzRJJWirlhiyev9WV_pXQ=/fit-in/492x600/filters:strip_icc()/pic6738336.jpg",
         "created_by": {
             "id": 3,
             "username": "user2",
@@ -204,6 +213,7 @@
         "min_players": 2,
         "max_players": 6,
         "category": "Dice",
+        "imageUrl": "https://cf.geekdo-images.com/m_RzXpHURC0_xLkvRSR_sw__itemrep@2x/img/3e4Rf5u2trvxizg5sqJIzCCp9MM=/fit-in/492x600/filters:strip_icc()/pic3043734.jpg",
         "created_by": {
             "id": 3,
             "username": "user2",

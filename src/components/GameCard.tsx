@@ -7,6 +7,7 @@ interface GameCardProps {
 export default function GameCard({ game }: GameCardProps) {
     return (
         <div className="card bg-base-100 shadow-xl">
+            {game.image_url && <img src={game.image_url} />}
             <div className="card-body">
                 <h2 className="card-title">{game.name}</h2>
                 <p>{game.description}</p>
@@ -22,11 +23,11 @@ export default function GameCard({ game }: GameCardProps) {
                     <div className="flex items-center gap-2">
                         <div className="avatar avatar-placeholder">
                             <div className="bg-amber-300 text-gray-800 w-10 rounded-full">
-                                <span className="text-lg">AI</span>
+                                <span className="text-lg">{game.user_id.username[0]}</span>
                             </div>
                         </div>
                         <div className="text-sm">
-                            <p className="font-semibold">{game.created_by.username}</p>
+                            <p className="font-semibold">{game.user_id.username}</p>
                         </div>
                     </div>
                     <button className="btn btn-primary btn-sm">View comments</button>

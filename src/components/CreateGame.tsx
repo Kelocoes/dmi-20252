@@ -1,4 +1,6 @@
-import { useRef, type FormEvent } from "react";
+import { useRef, useState, type ChangeEvent, type FormEvent } from "react";
+import bucketService from "../services/supabase/bucketService";
+import gameService from "../services/supabase/gamesService";
 
 interface CreateGameProps {
     onClose: () => void;
@@ -6,22 +8,53 @@ interface CreateGameProps {
 
 export default function CreateGame({ onClose }: CreateGameProps) {
     const formRef = useRef<HTMLFormElement>(null);
+    const [imagePreview, setImagePreview] = useState<string | null>();
 
     const categories = ["Strategy", "Family", "Cooperative", "Party", "Abstract", "Card Game"];
 
-    const handleSubmit = (e: FormEvent) => {
+    const handleImageUpload = (e: ChangeEvent<HTMLInputElement>) => {
+        const file = e.target.files?.[0];
+
+        if (file) {
+            const reader = new FileReader();
+            reader.onloadend = () => {
+                setImagePreview(reader.result as string);
+            };
+            reader.readAsDataURL(file);
+        } else {
+            setImagePreview(null);
+        }
+    };
+
+    const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
         const formData = new FormData(formRef.current!);
+        const imageFile = formData.get("image") as File;
         const dataObj = {
             name: formData.get("name"),
             description: formData.get("description"),
             min_players: Number(formData.get("min_players")),
             max_players: Number(formData.get("max_players")),
             category: formData.get("category"),
+            image: imageFile && imageFile.size > 0 ? imageFile : null,
         };
         console.info("Game Data:", dataObj);
         // TODO: Llamar al servicio para crear el juego
-        onClose();
+        const response = await bucketService.uploadImage(imageFile);
+        try {
+            const data = await gameService.create({
+                name: dataObj.name as string,
+                description: dataObj.description as string,
+                min_players: dataObj.min_players as number,
+                max_players: dataObj.max_players as number,
+                category: dataObj.category as string,
+                image_url: response.url as string,
+                user_id: 1
+            });
+        } catch (e) {
+            console.error(e);
+        }
+        // onClose();
     };
 
     return (
@@ -75,6 +108,20 @@ export default function CreateGame({ onClose }: CreateGameProps) {
                         ))}
                     </select>
                 </div>
+
+                <div className="form-control mb-6">
+                    <label className="label">
+                        <span className="label-text">Imagen del juego</span>
+                    </label>
+                    <input type="file" name="image" accept="image/*" className="file-input file-input-bordered w-full" onChange={handleImageUpload} />
+                </div>
+
+                {imagePreview && (
+                    <div>
+                        <p>Preview:</p>
+                        <img src={imagePreview} />
+                    </div>
+                )}
 
                 <div className="modal-action">
                     <button type="button" className="btn btn-ghost" onClick={onClose}>
