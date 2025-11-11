@@ -8,7 +8,7 @@ const authService = {
                 password,
                 options: {
                     data: metadata, // Información adicional del usuario si desean agregarla
-                    emailRedirectTo: "https://demo-curso.onrender.com/",
+                    emailRedirectTo: window.location.origin
                 },
             });
 
