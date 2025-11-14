@@ -1,9 +1,3 @@
-import { useEffect, useState } from "react";
-
-import canvaService from "../services/supabase/canvaService";
-import type { User } from "../types/User";
-import { type Positions } from "../types/Positions";
-
 import Cell from "./Cell";
 
 export default function Canvas() {
